@@ -1,0 +1,376 @@
+{
+  "products": [
+    {
+      "name": "boAt Rockerz 450",
+      "price": "1499",
+      "color": "#ECDDCE black",
+      "category": "Electronics",
+      "description": "Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes",
+      "image": "https://sugamphirke.com/Projects/emart/img/boat_rockerz_450.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/1.1.jpg https://sugamphirke.com/Projects/emart/img/1.2.jpg https://sugamphirke.com/Projects/emart/img/1.3.jpg https://sugamphirke.com/Projects/emart/img/1.4.jpg https://sugamphirke.com/Projects/emart/img/1.5.jpg https://sugamphirke.com/Projects/emart/img/1.6.jpg",
+      "id": 1
+    },
+    {
+      "name": "L'Oreal Paris Hair Combo",
+      "price": "1093",
+      "color": "White red",
+      "category": "Hair Products",
+      "description": "L'Oreal Paris Shampoo 704ml + Conditioner 192.5ml + Serum 40ml",
+      "image": "https://sugamphirke.com/Projects/emart/img/loreal_paris_hair_combo.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/2.1.jpg https://sugamphirke.com/Projects/emart/img/2.2.jpg https://sugamphirke.com/Projects/emart/img/2.3.jpg https://sugamphirke.com/Projects/emart/img/2.4.jpg https://sugamphirke.com/Projects/emart/img/2.5.jpg https://sugamphirke.com/Projects/emart/img/2.6.jpg",
+      "id": 2
+    },
+    {
+      "name": "Beardo Xxtra Stronghold Hair Wax",
+      "price": "400",
+      "color": "Black Violet",
+      "category": "Hair Products",
+      "description": "Crystal Hair Wax; Hair Wax Men; Glossy Finish; Shine; Extra Strong Hold; Styling Wax; 100 Gm",
+      "image": "https://sugamphirke.com/Projects/emart/img/Beardo%20Xxtra%20Stronghold%20Hair%20Wax.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/3.1.jpg https://sugamphirke.com/Projects/emart/img/3.2.jpg https://sugamphirke.com/Projects/emart/img/3.3.jpg https://sugamphirke.com/Projects/emart/img/3.4.jpg https://sugamphirke.com/Projects/emart/img/3.5.jpg",
+      "id": 3
+    },
+    {
+      "name": "Apple 2021 iMac",
+      "price": "119490",
+      "color": "#B6D1C8 pink Silver gold red",
+      "category": "Electronics",
+      "description": "4.5K Retina Display;24-inch/60.96 cm; M1 chip with 8‑core CPU and 8‑core GPU; 8GB RAM, 256GB)",
+      "image": "https://sugamphirke.com/Projects/emart/img/Apple%202021%20iMac.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/4.2.jpg https://sugamphirke.com/Projects/emart/img/4.1.jpg https://sugamphirke.com/Projects/emart/img/4.3.jpg https://sugamphirke.com/Projects/emart/img/4.4.jpg https://sugamphirke.com/Projects/emart/img/4.5.jpg",
+      "id": 4
+    },
+    {
+      "name": "Blaq Ash Men Hood Biker Jacket",
+      "price": "2199",
+      "color": "Black Red Green Blue",
+      "category": "Clothing",
+      "description": "Care Instructions: Hand Wash Only;Removable Hood attached with Zip;Premium PU fabric which doesn't peel with time;Biker Jacket / Casal Wear",
+      "image": "https://sugamphirke.com/Projects/emart/img/Blaq%20Ash%20Men%20Hood%20Biker%20Jacket.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/5.1.jpg https://sugamphirke.com/Projects/emart/img/5.2.jpg https://sugamphirke.com/Projects/emart/img/5.3.jpg https://sugamphirke.com/Projects/emart/img/5.4.jpg",
+      "id": 5
+    },
+    {
+      "name": "SVAAR Men's Classic Clogs",
+      "price": "1599",
+      "color": "#F5F5F1 green greenyellow orangered yellow black",
+      "category": "Footwear",
+      "description": "Sole: Rubber;Closure: Pull On;Shoe Width: Medium;Platform shoes: The new Classic Hiker Clogs boasts the same Classic Clog upper and fit but with a 10mm platform midsole and sawtooth outsole with rubber around perimeter for traction;Designed to fit: These slip-on clogs are easy to take on and off, while being extremely durable. These Crocs even offer pivotable backstrap with hook-and-loop adjustability for a more secure fit;Make each pair unique: Customise your pair of Crocs with fun Jibbitz charms that can be inserted into the ventilation ports, so you can personalise them to your specific style",
+      "image": "https://sugamphirke.com/Projects/emart/img/SVAAR%20Men's%20Classic%20Clogs.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/6.1.jpg https://sugamphirke.com/Projects/emart/img/6.2.jpg https://sugamphirke.com/Projects/emart/img/6.3.jpg https://sugamphirke.com/Projects/emart/img/6.4.jpg https://sugamphirke.com/Projects/emart/img/6.5.jpg https://sugamphirke.com/Projects/emart/img/6.6.jpg",
+      "id": 6
+    },
+    {
+      "name": "Galaxtic Furniture",
+      "price": "3500",
+      "color": "#964B00 Brown #757579",
+      "category": "Home Decoration",
+      "description": "Material: Engineered Wood;Room Type: Office, Kitchen, Bedroom, Living Room, Dining Room;Number of Shelves: 1;Special Feature: Rust Proof, Weather Resistant, Heavy Duty, Adjustable, Scratch Resistant;Product Dimensions: 20D x 20W x 125H Centimeters;Style: Modern;Brand: Furniture Cafe;Product Care Instructions: Wipe with Dry Cloth;Size: Medium",
+      "image": "https://m.media-amazon.com/images/I/81YnapMNAkL._SL1500_.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/7.1.jpg https://sugamphirke.com/Projects/emart/img/7.2.jpg https://sugamphirke.com/Projects/emart/img/7.3.jpg https://sugamphirke.com/Projects/emart/img/7.4.jpg",
+      "id": 7
+    },
+    {
+      "name": "Odyssey Neo G9 Gaming Monitor",
+      "price": "134505",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Screen Size: 49 Inches;Display Resolution: 5,120 x 1,440 Pixels;Brand: Samsung;Special Feature: High Dynamic Range;Refresh Rate: 240 Hz",
+      "image": "https://sugamphirke.com/Projects/emart/img/Samsung%20Gaming%20Monitor.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/8.1.jpg https://sugamphirke.com/Projects/emart/img/8.2.jpg https://sugamphirke.com/Projects/emart/img/8.3.jpg https://sugamphirke.com/Projects/emart/img/8.4.jpg",
+      "id": 8
+    },
+    {
+      "name": "Rylan Wall Clock",
+      "price": "599",
+      "color": "Gray red pink black gold",
+      "category": "Home Decoration",
+      "description": "Brand: Solimo;Display Type: Analog;Style: 1;Product Dimensions: 30W x 30H Centimeters;Power Source: Battery Powered;Age Range (Description): Adult;Room Type: Office, Living Room, Bedroom;Shape: Round;Material: Plastic",
+      "image": "https://sugamphirke.com/Projects/emart/img/Rylan%20Wall%20clock.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/9.1.jpg https://sugamphirke.com/Projects/emart/img/9.2.jpg https://sugamphirke.com/Projects/emart/img/9.3.jpg https://sugamphirke.com/Projects/emart/img/9.4.jpg https://sugamphirke.com/Projects/emart/img/9.5.jpg https://sugamphirke.com/Projects/emart/img/9.6.jpg",
+      "id": 9
+    },
+    {
+      "name": "WakeFit Amoeba Sofa cum Bed",
+      "price": "19151",
+      "color": "#323232 gray #E1D9D1",
+      "category": "Home Decoration",
+      "description": "Product Dimensions: 57.2D x 194.3W x 106.7H Centimeters;Colour: Omega Green;Brand: Wakefit;Special Feature: Seat Fill;Material: Foam;Type: Sofa Bed;Upholstery Fabric Type: Polyester;Room Type: Living Room;Arm Style: Armless;Pattern: Solid;Back Style: Tufted Back",
+      "image": "https://sugamphirke.com/Projects/emart/img/Wakefit%20Amoeba%20Sofa%20cum%20Bed.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/10.1.jpg https://sugamphirke.com/Projects/emart/img/10.2.jpg https://sugamphirke.com/Projects/emart/img/10.3.jpg https://sugamphirke.com/Projects/emart/img/10.4.jpg https://sugamphirke.com/Projects/emart/img/10.5.jpg",
+      "id": 10
+    },
+    {
+      "name": "RealMe Narzo N55",
+      "price": "12999",
+      "color": "Blue #222B31 #F0DC9A",
+      "category": "Electronics",
+      "description": "Brand: realme; Model Name: realme narzo N55; Network Service Provider: Unlocked for All Carriers; Operating System: Android 13.0; Cellular Technology: 4G",
+      "image": "https://sugamphirke.com/Projects/emart/img/RealMe%20Narzo%20N55.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/11.1.jpg https://sugamphirke.com/Projects/emart/img/11.2.jpg https://sugamphirke.com/Projects/emart/img/11.3.jpg https://sugamphirke.com/Projects/emart/img/11.4.jpg https://sugamphirke.com/Projects/emart/img/11.5.jpg https://sugamphirke.com/Projects/emart/img/11.6.jpg",
+      "id": 11
+    },
+    {
+      "name": "Wipro Vesta 1200W Iron",
+      "price": "1049",
+      "color": "#E7E7E7 black #6CA1A5",
+      "category": "Electronics",
+      "description": "Brand: wipro; Special Feature: Heavy; Colour: White; Item Dimensions LxWxH: 15.2 x 28.6 x 12.7 Centimeters; Base Material: Aluminium",
+      "image": "https://sugamphirke.com/Projects/emart/img/Wipro%20vesta%201200%20watt%20Iron.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/12.1.jpg https://sugamphirke.com/Projects/emart/img/12.2.jpg https://sugamphirke.com/Projects/emart/img/12.3.jpg https://sugamphirke.com/Projects/emart/img/12.4.jpg https://sugamphirke.com/Projects/emart/img/12.5.jpg https://sugamphirke.com/Projects/emart/img/12.6.jpg",
+      "id": 12
+    },
+    {
+      "name": "Speedex Stainless-Steel WaterBottle",
+      "price": "352",
+      "color": "#0C2B41 #000000 yellow pink purple",
+      "category": "Kids",
+      "description": "Brand: Speedex; Material: Stainless Steel; Colour: Dark Blue; Capacity: 1000 Milliliters; Special Feature: Leak Proof, Lightweight",
+      "image": "https://sugamphirke.com/Projects/emart/img/Speedex%20Stainless%20Steel%201L%20Water%20bottle.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/13.1.jpg https://sugamphirke.com/Projects/emart/img/13.2.jpg https://sugamphirke.com/Projects/emart/img/13.3.jpg https://sugamphirke.com/Projects/emart/img/13.4.jpg https://sugamphirke.com/Projects/emart/img/13.5.jpg https://sugamphirke.com/Projects/emart/img/13.6.jpg",
+      "id": 13
+    },
+    {
+      "name": "Portronics Ruffpad",
+      "price": "1199",
+      "color": "Black",
+      "category": "Kids",
+      "description": "Brand: Portronics; Special Feature: Stylus; Model Name: Ruffpad 8.5E; Screen Size: 8.5 Inches; Display Type: LCD",
+      "image": "https://sugamphirke.com/Projects/emart/img/Protronics%20Ruffpad.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/14.1.jpg https://sugamphirke.com/Projects/emart/img/14.2.jpg https://sugamphirke.com/Projects/emart/img/14.3.jpg https://sugamphirke.com/Projects/emart/img/14.4.jpg https://sugamphirke.com/Projects/emart/img/14.5.jpg https://sugamphirke.com/Projects/emart/img/14.6.jpg",
+      "id": 14
+    },
+    {
+      "name": "Cherry Wood Shelf",
+      "price": "695",
+      "color": "black Brown #AAA0A3",
+      "category": "Home Decoration",
+      "description": "Material: Wood; Room Type: Living Room; Number of Shelves: 3; Product Dimensions: 39.4D x 10.2W x 32.4H Centimeters; Style: Contemporary; Brand: UTEEZ; Product Care Instructions: Wipe with Dry Cloth; Size: Standard; Assembly Required: Yes",
+      "image": "https://sugamphirke.com/Projects/emart/img/Cherry%20Wood%20Shelf.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/15.1.jpg https://sugamphirke.com/Projects/emart/img/15.2.jpg https://sugamphirke.com/Projects/emart/img/15.3.jpg https://sugamphirke.com/Projects/emart/img/15.4.jpg https://sugamphirke.com/Projects/emart/img/15.5.jpg https://sugamphirke.com/Projects/emart/img/15.6.jpg",
+      "id": 15
+    },
+    {
+      "name": "LG 32L Microwave Oven",
+      "price": "22900",
+      "color": "#2F3035 blue red greenyellow",
+      "category": "Electronics",
+      "description": "Brand: LG; Product Dimensions: 31.5D x 53W x 52H Centimeters; Colour: Black; Capacity: 32 litres; Special Feature: Programmable, Auto_cook, Control_panel_lock, Defrost, Interior_light, Self-cleaning, Timer, Turntable",
+      "image": "https://sugamphirke.com/Projects/emart/img/LG%2032%20L%20Microwave%20Oven.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/16.1.jpg https://sugamphirke.com/Projects/emart/img/16.2.jpg https://sugamphirke.com/Projects/emart/img/16.3.jpg https://sugamphirke.com/Projects/emart/img/16.4.jpg https://sugamphirke.com/Projects/emart/img/16.5.jpg https://sugamphirke.com/Projects/emart/img/16.6.jpg",
+      "id": 16
+    },
+    {
+      "name": "Stewit Water Bottle",
+      "price": "99",
+      "color": "#58656B gray #81d789 #fd3f5b #ce02ac",
+      "category": "Kids",
+      "description": "Brand: Stewit; Material: Plastic; Bottle Type: Standard Bottle; Colour: Black; Capacity: 1000 Milliliters",
+      "image": "https://sugamphirke.com/Projects/emart/img/Stewit%20water%20bottles.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/17.1.jpg https://sugamphirke.com/Projects/emart/img/17.2.jpg https://sugamphirke.com/Projects/emart/img/17.3.jpg https://sugamphirke.com/Projects/emart/img/17.4.jpg",
+      "id": 17
+    },
+    {
+      "name": "Solimo 12 inch Wall clock ",
+      "price": "1249",
+      "color": "Black #E17833 #D38F38 #D78F37",
+      "category": "Home Decoration",
+      "description": "Brand: Amazon Brand - Solimo; Colour: Black; Display Type: Analog; Style: 1; Special Feature: Silent Clock; Product Dimensions: 30W x 6H Centimeters; Power Source: Battery Powered; Age Range (Description): Adult; Room Type: Living Room, Bedroom; Shape: Round",
+      "image": "https://sugamphirke.com/Projects/emart/img/Solimo%2012%20inch%20Wall%20clock.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/18.1.jpg https://sugamphirke.com/Projects/emart/img/18.2.jpg https://sugamphirke.com/Projects/emart/img/18.3.jpg https://sugamphirke.com/Projects/emart/img/18.4.jpg https://sugamphirke.com/Projects/emart/img/18.5.jpg",
+      "id": 18
+    },
+    {
+      "name": "BlueStar 1.5 ton AC",
+      "price": "44189",
+      "color": "#dfd0f9",
+      "category": "Electronics",
+      "description": "Brand: Blue Star; Capacity: 1.5 Tons; Special Feature: Dust Filter; Product Dimensions: 21.5D x 96W x 32H Centimeters; Energy Star: 5 Star",
+      "image": "https://sugamphirke.com/Projects/emart/img/Blue%20start%201.5%20ton%20AC.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/19.1.jpg https://sugamphirke.com/Projects/emart/img/19.2.jpg https://sugamphirke.com/Projects/emart/img/19.3.jpg https://sugamphirke.com/Projects/emart/img/19.4.jpg https://sugamphirke.com/Projects/emart/img/19.5.jpg https://sugamphirke.com/Projects/emart/img/19.6.jpg",
+      "id": 19
+    },
+    {
+      "name": "Lava Blaze",
+      "price": "11999",
+      "color": "#CAE2CA #8b6fae #b94175 #5d265d",
+      "category": "Electronics",
+      "description": "Brand: Lava; Model Name: Lava Blaze 5G; Network Service Provider: Unlocked for All Carriers; Operating System: Android 12.0; Cellular Technology: 5G",
+      "image": "https://sugamphirke.com/Projects/emart/img/Lava%20Blaze.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/20.1.jpg https://sugamphirke.com/Projects/emart/img/20.2.jpg https://sugamphirke.com/Projects/emart/img/20.3.jpg https://sugamphirke.com/Projects/emart/img/20.4.jpg https://sugamphirke.com/Projects/emart/img/20.5.jpg",
+      "id": 20
+    },
+    {
+      "name": "Kurtzy Open Book Shelf",
+      "price": "3949",
+      "color": "#A48B70",
+      "category": "Home Decoration",
+      "description": "Material: Engineered Wood; Room Type: Office, Living Room, Bedroom, Study Room; Number of Shelves: 9; Special Feature: Durable; Product Dimensions: 47D x 21W x 131H Centimeters; Style: Classic; Age Range (Description): Adult; Brand: ABOUT SPACE; Product Care Instructions: Wipe with Dry Cloth; Size: 131cm x 21cm x 47cm",
+      "image": "https://sugamphirke.com/Projects/emart/img/Kurtzy%20Open%20book%20shelf.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/21.1.jpg https://sugamphirke.com/Projects/emart/img/21.2.jpg https://sugamphirke.com/Projects/emart/img/21.3.jpg https://sugamphirke.com/Projects/emart/img/21.4.jpg https://sugamphirke.com/Projects/emart/img/21.5.jpg",
+      "id": 21
+    },
+    {
+      "name": "Philips Garment Steamer",
+      "price": "3349",
+      "color": "#8394A4 #4bb6a0 #487180 #1f600c",
+      "category": "Electronics",
+      "description": "Brand: PHILIPS;Item Dimensions LxWxH: 23 x 13.4 x 12.4 Centimeters; Item Weight: 775 Grams; Style: STH3000/2",
+      "image": "https://sugamphirke.com/Projects/emart/img/Philips%20Garment%20Steamer.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/22.1.jpg https://sugamphirke.com/Projects/emart/img/22.2.jpg https://sugamphirke.com/Projects/emart/img/22.3.jpg https://sugamphirke.com/Projects/emart/img/22.4.jpg https://sugamphirke.com/Projects/emart/img/22.5.jpg https://sugamphirke.com/Projects/emart/img/22.6.jpg",
+      "id": 22
+    },
+    {
+      "name": "OPPO F23",
+      "price": "24999",
+      "color": "#EFDAAF gold silver orangered",
+      "category": "Electronics",
+      "description": "Brand: Oppo; Model Name: F23 5G; Network Service Provider: Unlocked for All Carriers; Operating System: Android 13.0; Cellular Technology: 5G",
+      "image": "https://sugamphirke.com/Projects/emart/img/OPPO%20F23.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/23.1.jpg https://sugamphirke.com/Projects/emart/img/23.2.jpg https://sugamphirke.com/Projects/emart/img/23.3.jpg https://sugamphirke.com/Projects/emart/img/23.4.jpg",
+      "id": 23
+    },
+    {
+      "name": "SleepyHead Yolo Sofa",
+      "price": "19998",
+      "color": "#604C3F brown #B19E90 #E8EAEB",
+      "category": "Home Decoration",
+      "description": "Product Dimensions: 99.1D x 190.5W x 91.4H Centimeters; Colour: Sangria Purple; Brand: Sleepyhead; Special Feature: Folding; Type: Convertible; Upholstery Fabric Type: Polyester; Room Type: Living Room; Arm Style: Padded; Pattern: Solid; Size: Large",
+      "image": "https://sugamphirke.com/Projects/emart/img/Sleephead%20Yolo%20Sofa.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/24.1.jpg https://sugamphirke.com/Projects/emart/img/24.2.jpg https://sugamphirke.com/Projects/emart/img/24.3.jpg https://sugamphirke.com/Projects/emart/img/24.4.jpg https://sugamphirke.com/Projects/emart/img/24.5.jpg",
+      "id": 24
+    },
+    {
+      "name": "Samsung Crystal Smart 4K TV",
+      "price": "47990",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Screen Size: 55 Inches; Brand: Samsung; Supported Internet Services: Netflix, Prime Video, Zee5, SonyLiv, Youtube, Hotstar; Display Technology: LED; Product Dimensions: 6D x 123.1W x 70.7H Centimeters; Resolution: 4K; Refresh Rate: 50 Hz; Special Feature: Smart TV Features: Supported apps - Netflix, Prime Video, YouTube, etc., Screen mirroring, Universal Guide, Media Home, Tap View, Mobile Camera Support, AI Speaker, Easy Setup, App Casting, Wireless DeX, SmartThings, Smart Hub, IoT Sensor, Web Browser; Model Name: UA55CUE60AKLXL",
+      "image": "https://sugamphirke.com/Projects/emart/img/Samsung%20Crystal%20Smart%204K%20TV.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/25.1.jpg https://sugamphirke.com/Projects/emart/img/25.2.jpg https://sugamphirke.com/Projects/emart/img/25.3.jpg https://sugamphirke.com/Projects/emart/img/25.4.jpg https://sugamphirke.com/Projects/emart/img/25.5.jpg https://sugamphirke.com/Projects/emart/img/25.6.jpg",
+      "id": 25
+    },
+    {
+      "name": "OnePlus Nord CE 2",
+      "price": "18990",
+      "color": "Black #2d4c21 #c01313 #616ab7",
+      "category": "Electronics",
+      "description": "Brand: OnePlus; Model Name: OnePlus Nord CE 2 5G; Network Service Provider: Unlocked for All Carriers; Operating System: OxygenOS; Cellular Technology: 5G",
+      "image": "https://sugamphirke.com/Projects/emart/img/OnePlus%20Nord%20CE%202.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/26.1.jpg https://sugamphirke.com/Projects/emart/img/26.2.jpg https://sugamphirke.com/Projects/emart/img/26.3.jpg https://sugamphirke.com/Projects/emart/img/26.4.jpg https://sugamphirke.com/Projects/emart/img/26.5.jpg",
+      "id": 26
+    },
+    {
+      "name": "Samsung 865L Refrigerator",
+      "price": "299900",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Product Dimensions: 86.1D x 91.2W x 182.5H Centimeters; Brand: Samsung; Capacity: 865 litres; Configuration: Freezer-on-Top; Colour: Black Caviar",
+      "image": "https://sugamphirke.com/Projects/emart/img/Samsung%20865L%20Refrigerator.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/27.1.jpg https://sugamphirke.com/Projects/emart/img/27.2.jpg https://sugamphirke.com/Projects/emart/img/27.3.jpg https://sugamphirke.com/Projects/emart/img/27.4.jpg https://sugamphirke.com/Projects/emart/img/27.5.jpg https://sugamphirke.com/Projects/emart/img/27.6.jpg",
+      "id": 27
+    },
+    {
+      "name": "Milton Water Bottle",
+      "price": "1499",
+      "color": "Silver #EFEFEF #363636",
+      "category": "Kids",
+      "description": "Brand: MILTON; Material: Stainless Steel; Bottle Type: Steel Bottle; Colour: Silver; Capacity: 1000 Milliliters",
+      "image": "https://sugamphirke.com/Projects/emart/img/Milton%20Water%20Bottle.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/28.1.jpg https://sugamphirke.com/Projects/emart/img/28.2.jpg https://sugamphirke.com/Projects/emart/img/28.3.jpg https://sugamphirke.com/Projects/emart/img/28.4.jpg",
+      "id": 28
+    }
+  ],
+  "cart": [
+    {
+      "name": "Apple 2021 iMac",
+      "price": "119490",
+      "color": "#B6D1C8 pink Silver gold red",
+      "category": "Electronics",
+      "description": "4.5K Retina Display;24-inch/60.96 cm; M1 chip with 8‑core CPU and 8‑core GPU; 8GB RAM, 256GB)",
+      "image": "https://sugamphirke.com/Projects/emart/img/Apple%202021%20iMac.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/4.2.jpg https://sugamphirke.com/Projects/emart/img/4.1.jpg https://sugamphirke.com/Projects/emart/img/4.3.jpg https://sugamphirke.com/Projects/emart/img/4.4.jpg https://sugamphirke.com/Projects/emart/img/4.5.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 4,
+      "id": 1
+    },
+    {
+      "name": "RealMe Narzo N55",
+      "price": "12999",
+      "color": "Blue #222B31 #F0DC9A",
+      "category": "Electronics",
+      "description": "Brand: realme; Model Name: realme narzo N55; Network Service Provider: Unlocked for All Carriers; Operating System: Android 13.0; Cellular Technology: 4G",
+      "image": "https://sugamphirke.com/Projects/emart/img/RealMe%20Narzo%20N55.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/11.1.jpg https://sugamphirke.com/Projects/emart/img/11.2.jpg https://sugamphirke.com/Projects/emart/img/11.3.jpg https://sugamphirke.com/Projects/emart/img/11.4.jpg https://sugamphirke.com/Projects/emart/img/11.5.jpg https://sugamphirke.com/Projects/emart/img/11.6.jpg",
+      "quantity": "1",
+      "userId": 2,
+      "productId": 11,
+      "id": 9
+    },
+    {
+      "name": "Speedex Stainless-Steel WaterBottle",
+      "price": "352",
+      "color": "#0C2B41 #000000 yellow pink purple",
+      "category": "Kids",
+      "description": "Brand: Speedex; Material: Stainless Steel; Colour: Dark Blue; Capacity: 1000 Milliliters; Special Feature: Leak Proof, Lightweight",
+      "image": "https://sugamphirke.com/Projects/emart/img/Speedex%20Stainless%20Steel%201L%20Water%20bottle.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/13.1.jpg https://sugamphirke.com/Projects/emart/img/13.2.jpg https://sugamphirke.com/Projects/emart/img/13.3.jpg https://sugamphirke.com/Projects/emart/img/13.4.jpg https://sugamphirke.com/Projects/emart/img/13.5.jpg https://sugamphirke.com/Projects/emart/img/13.6.jpg",
+      "quantity": "2",
+      "userId": 2,
+      "productId": 13,
+      "id": 10
+    },
+    {
+      "name": "Lava Blaze",
+      "price": "11999",
+      "color": "#CAE2CA #8b6fae #b94175 #5d265d",
+      "category": "Electronics",
+      "description": "Brand: Lava; Model Name: Lava Blaze 5G; Network Service Provider: Unlocked for All Carriers; Operating System: Android 12.0; Cellular Technology: 5G",
+      "image": "https://sugamphirke.com/Projects/emart/img/Lava%20Blaze.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/20.1.jpg https://sugamphirke.com/Projects/emart/img/20.2.jpg https://sugamphirke.com/Projects/emart/img/20.3.jpg https://sugamphirke.com/Projects/emart/img/20.4.jpg https://sugamphirke.com/Projects/emart/img/20.5.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 20,
+      "id": 11
+    },
+    {
+      "name": "Philips Garment Steamer",
+      "price": "3349",
+      "color": "#8394A4 #4bb6a0 #487180 #1f600c",
+      "category": "Electronics",
+      "description": "Brand: PHILIPS;Item Dimensions LxWxH: 23 x 13.4 x 12.4 Centimeters; Item Weight: 775 Grams; Style: STH3000/2",
+      "image": "https://sugamphirke.com/Projects/emart/img/Philips%20Garment%20Steamer.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/22.1.jpg https://sugamphirke.com/Projects/emart/img/22.2.jpg https://sugamphirke.com/Projects/emart/img/22.3.jpg https://sugamphirke.com/Projects/emart/img/22.4.jpg https://sugamphirke.com/Projects/emart/img/22.5.jpg https://sugamphirke.com/Projects/emart/img/22.6.jpg",
+      "quantity": "4",
+      "userId": 2,
+      "productId": 22,
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "Anil Tester",
+      "username": "anil",
+      "email": "anil@test.com",
+      "phoneNo": "7248965324",
+      "password": "Sugam@016",
+      "id": 1
+    },
+    {
+      "name": "Sugam Phirke",
+      "username": "sugamphirke",
+      "email": "sugamphirke9@gmail.com",
+      "phoneNo": "7248965324",
+      "password": "Sugam@016",
+      "id": 2
+    }
+  ],
+  "coupons": [
+    {
+      "code": "TESTING",
+      "percent": 99,
+      "id": 1
+    }
+  ]
+}

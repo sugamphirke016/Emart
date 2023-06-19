@@ -1,0 +1,70 @@
+<div class="login">
+
+    <div id="screen">
+      <div id="frame1" style="border-right: 1px solid black ;">
+        <div class="container">
+          <img style="border-radius: 10px;" id="logo" src="assets/Photos/e-Mart_animated_logo.gif" alt="e-Mart"
+            height="130px" width="130px">
+  
+          <span id="logotext">e-Mart</span>
+        </div>
+        <div class="slogan">
+          <img src="assets/Photos/Logo_mart.png" alt="" height="70px" width="250px"
+            style="margin-left: 44.7%; margin-top:-30px">
+        </div>
+      </div>
+      <div id="frame2">
+        <p class="SignupText" style="font-weight: bolder; font-size: 30px;">HELLO THERE,</p>
+        <p class="SignupText" style="margin-top:-30px; font-weight: bolder; font-size: 30px;">WELCOME BACK</p>
+        <p class="SignupText" style="margin-top:-25px; color:#00008B">Sign In to continue!</p>
+  
+        <form name="loginForm" class="userinfo">
+  
+          <label class="custom-field three">
+            <input type="text" id="name" name="fullname" [(ngModel)]="name" placeholder="Full Name" required/>
+            <!-- <span class="placeholder">Full Name</span> -->
+            <span class="border"></span>
+          </label>
+          <br>
+          <label class="custom-field three">
+            <input type="text" id="username" name="username" [(ngModel)]="username" placeholder="Sellername" required/>
+            <!-- <span class="placeholder">Username</span> -->
+            <span class="border"></span>
+          </label>
+          <br>
+          <label class="custom-field three">
+            <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="E-mail" required />
+            <!-- <span class="placeholder">E-mail</span> -->
+            <span class="border"></span>
+          </label>
+          <br>
+          <label class="custom-field three">
+            <input type="tel" id="phoneNo" name="phoneNo" [(ngModel)]="phoneNo" placeholder="Phone No" required/>
+            <!-- <span class="placeholder">Phone No</span> -->
+            <span class="border"></span>
+          </label>
+          <br>
+          <label class="custom-field three">
+            <input type="password"  [(ngModel)]="password" name="password" placeholder="PassKey" id="pass" [type]="passwordVisible ? 'text' : 'password'" required/>
+            <!-- <span class="placeholder">Password</span> -->
+            <span class="border"></span>
+          </label>
+          
+  
+          <img class="lock" (click)="togglePasswordVisibility()"
+            [src]="passwordVisible ? 'assets/Photos/unlocked.png' : 'assets/Photos/locked.png'" height="40px" width="40px"
+            alt="">
+  
+          <br>
+          <input name="submit" type="submit" (click)="register()" value="Sign In">
+          <br>
+          <div class="prompts">
+  
+          </div>
+          <span class="prompt">ALDREADY A SELLER? </span>
+          <a routerLink="/seller/login" class="promptAsk">SIGN IN</a>
+        </form>
+  
+      </div>
+    </div>
+  </div>

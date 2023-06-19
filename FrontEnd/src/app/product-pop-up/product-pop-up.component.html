@@ -1,0 +1,50 @@
+<app-header [@headerAnimation] *ngIf="isAddedToCart"></app-header>
+<div class="grid-test">
+    <div class="btn_back">
+        <a (click)="goBack()"><img class="back" [src]="lockIconSrc" (mouseenter)="onLockIconHover(true)"
+            (mouseleave)="onLockIconHover(false)" alt="Back"></a>
+    </div>
+    <div class="row" *ngIf="productData">
+        <div class="col-1-of-2 gen-width">
+            <img class="productImage" src="{{url1 || productData.image}}" alt="">
+
+            <div class="p" (mouseover)="changeImageCard1($event)">
+                <img src="{{productData.image}}" alt="">
+                <img *ngFor="let image of imageSources" [src]="image" alt="Product1">
+            </div>
+
+        </div>
+        <div class="col-1-of-2 small-width">
+            <div class="details">
+                <h1>{{productData.name}}</h1>
+                <h3>₹ {{productData.price}}/- </h3>  <span>only</span>
+                <p>Inclusive of all taxes</p>
+                <div>
+                    Available colors
+                    <h5 *ngFor="let color of colors" [style.backgroundColor]="color" class="product-color"></h5>
+                </div>
+                <h6>Category: {{productData.category}}</h6>
+                <br>
+                <h3>Product Description</h3> 
+                <div class="line"></div>
+                <ul *ngFor="let lines of description">
+                    <li>{{lines}}</li>
+                </ul>
+
+                <div class="quantity-group">
+                    <button (click)="handleQuantity('min')">-</button>
+                    <input type="text" value="{{productQuantity}}" id="inputRef">
+                    <button (click)="handleQuantity('plus')">+</button>
+                </div>
+
+                <button (click)="addToCart()" class="btn_addToCart" [ngClass]="{'added': isAddedToCart}">
+                    {{ buttonLabel }}
+                  </button>
+                <button class="btn_BuyNow">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-bottom-nav-bar></app-bottom-nav-bar>
+<app-footer></app-footer>

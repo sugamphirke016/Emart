@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+<div id="header">
+    <div id="flexo" style="display: inline-flex; padding-bottom: 7px; padding-left:50px">
+        <img class="logo" src="assets/Photos/rounded_logo.png" alt="" height="50px" width="50px">
+        <p id="logo_heading" style="color:#F89A26;">e-Mart</p>
+    </div>
+    
+    <div id="btns">
+        <abbr title="Account"><a routerLink="/login"><img class="btn_header_account btn_header" [src]="accountIconSrc" alt="Account" width="40px" height="40px" (mouseenter)="onAccountIconHover(true)" (mouseleave)="onAccountIconHover(false)" /></a></abbr>
+
+        <router-outlet></router-outlet>
+
+        <abbr title="Cart">
+            <a routerLink="/cart">
+                <img class="btn_header_cart btn_header" [src]="cartIconSrc" alt="myCart" width="40px" height="40px" (mouseenter)="onCartIconHover(true)" (mouseleave)="onCartIconHover(false)"/>
+            </a>
+            <span class="cartItems">{{cartItems}}</span>
+        </abbr>
+        <!-- <span class="cart_items"></span> -->
+
+        <abbr title="Settings"><img class="btn_header_settings btn_header" [src]="settingsIconSrc" alt="Settings" width="40px" height="40px" (mouseenter)="onSettingsIconHover(true)" (mouseleave)="onSettingsIconHover(false)"/></abbr>
+    </div>
+</div>

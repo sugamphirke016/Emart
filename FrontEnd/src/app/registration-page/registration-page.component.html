@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<body style="background-color: white;">
+  <a routerLink="/home"><img class="back"  [src]="lockIconSrc" (mouseenter)="onLockIconHover(true)" (mouseleave)="onLockIconHover(false)" alt="Back"></a>
+  <div class="container">
+    <img id="logo"style="border-radius: 10px;" src="assets/Photos/e-Mart_animated_logo.gif" alt="e-Mart" height="130px" width="130px">
+    <span id="logotext">e-Mart</span>
+  </div>
+  <div class="slogan">
+    <img src="assets/Photos/Logo_mart.png" alt="" height="70px" width="250px" style="margin-left: 47%; margin-top:-30px">
+  </div>
+    <div id="screen">
+        <div id="frame1">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="assets/Photos/image1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/Photos/image2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/Photos/image3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/Photos/image4.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="assets/Photos/image5.png" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="assets/Photos/image6.jpg" style="width:100%">
+                  </div>
+                
+                </div>
+            </div>  
+        <div id="frame2" style="border-left: 1px solid black;">
+          <p class="SignupText" style="margin-top: 30px;margin-left: 5px; font-weight: bolder; font-size: 30px; line-height: 12px;">WELCOME</p>
+          <p class="SignupText" style="margin-left: 5px; margin-top:-15px; color:#00008B;padding-top: 5px;">SignUp to start your Journey...</p>
+          <form class="userinfo" autocomplete="off">
+
+            <label class="custom-field three">
+              <input type="text" id="name" name="fullname" [(ngModel)]="name" placeholder="Full Name" required/>
+              <span class="border"></span>
+            </label>
+            <br>
+            <label class="custom-field three">
+              <input type="text" id="username" name="username" [(ngModel)]="username" placeholder="Username" required/>
+              <span class="border"></span>
+            </label>
+            <br>
+            <label class="custom-field three">
+              <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="E-mail" required />
+              <span class="border"></span>
+            </label>
+            <br>
+            <label class="custom-field three">
+              <input type="tel" id="phoneNo" name="phoneNo" [(ngModel)]="phoneNo" placeholder="Phone No" required/>
+              <span class="border"></span>
+            </label>
+            <br>
+            <label class="custom-field three">
+              <input type="password"  [(ngModel)]="password" name="password" placeholder="Password" id="pass" [type]="passwordVisible ? 'text' : 'password'" required/>
+              <span class="border"></span>
+            </label>
+            
+            <img class="lock" (click)="togglePasswordVisibility()" [src]="passwordVisible ? 'assets/Photos/unlocked.png' : 'assets/Photos/locked.png'" height="40px" width="40px"  alt="">
+
+            <br>
+            <input type="submit" id="signup" name="submit"  value="Sign Up" (click)="register()">
+            <br>
+            <div class="prompts">
+
+            </div>
+            <span class="prompt">ALREADY HAVE A ACCOUNT? </span>
+            <a routerLink="/login" class="promptAsk">SIGN IN</a>
+          </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.copyright{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.copyright > span{
+    display: block;
+    margin-left: 37%;
+    padding-top: 10px;
+    top:10px;
+    font-family: 'Antic',sans-serif;
+    font-size: medium;
+    font-weight: 300;
+}
+
+#copyright_logo{
+    font-weight: bold;
+    font-size: larger;
+}
+  
+  .sliding-line {
+    position: absolute;
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+  }
+  
+  @keyframes slide {
+    from { left: -100%; }
+    to { left: 100%; }
+  }

@@ -1,0 +1,143 @@
+.footer {
+    background-color: #454545;
+    height: 350px;
+    width: 100%;
+}
+
+.footer {
+    color: bisque;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer .top {
+    /* padding: 10rem 9%; */
+    padding: 10px 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.footer .top .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+
+.footer .top .content p {
+    /* margin-top: 50px; */
+    width: 90%;
+}
+
+.footer .top .link h4 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.footer .top .link a {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer .top .link a {
+    display: block;
+}
+
+.footer .top .link div {
+    /* margin-bottom: 8px; */
+    display: flex;
+    align-items: center;
+}
+
+.footer .top .link div img {
+    margin-right: 1rem;
+}
+
+.link>a {
+    text-decoration: none;
+    color: #bebebe;
+}
+
+.link>a:hover {
+    color: #fff;
+}
+
+.connect>span {
+    color: #bebebe;
+}
+
+.connect>span:hover {
+    color: #fff;
+}
+
+.content a {
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    /* color: #F89A26; */
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.info_footer {
+    color: #fff;
+}
+
+.desc {
+    /* color: rgba(240, 167, 78, 0.7); */
+    color: #fff;
+
+}
+
+.social_media {
+    color: #bebebe;
+}
+
+.social_media:hover {
+    color: #fff;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 1px #fff, 0 0 2px #ff4da6, 0 0 3px #ff4da6, 0 0 4px #ff4da6, 0 0 5px #ff4da6, 0 0 6px #ff4da6, 0 0 7px #ff4da6;
+        }
+
+        to {
+            text-shadow: 0 0 3px #fff, 0 0 5px #ff4da6, 0 0 7px #ff4da6, 0 0 9px #ff4da6, 0 0 11px #ff4da6, 0 0 13px #ff4da6, 0 0 15px #ff4da6;
+        }
+    }
+}
+
+.reviewInp {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px 2px;
+    background-color: black;
+    color: white;
+    padding: -1px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.reviewInp:hover {
+    background-color: white;
+    color: black;
+}
+
+.desc span{
+    text-align: left;
+    display: block;
+}
+
+textarea {
+    color: black;
+    background: #fff;
+    height: 80px;
+    width: 380px;
+}

@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: transparent;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    width: 85%;
+}
+
+.container2 .box2 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    transition: 0.5s;
+}
+
+.container2 .box2:hover {
+    transform: translateY(-20px);
+}
+
+.container2 .box2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container2 .box2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+
+.container2 .box2:nth-child(2):before,
+.container2 .box2:nth-child(2):after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container2 .box2:nth-child(3):before,
+.container2 .box2:nth-child(3):after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container2 .box2:nth-child(4):before,
+.container2 .box2:nth-child(4):after {
+    background: linear-gradient(135deg, #ffff00, brown);
+}
+
+.container2 .box2:nth-child(5):before,
+.container2 .box2:nth-child(5):after {
+    background: linear-gradient(315deg, purple, violet);
+}
+
+
+.container2 .box2 span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container2 .box2 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.container2 .box2 .content {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container2 .box2 .content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container2 .box2 .content p {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container2 .box2 .content .btn1,
+.container2 .box2 .content .btn2,
+.container2 .box2 .content .btn3,
+.container2 .box2 .content .btn4,
+.container2 .box2 .content .btn5 {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 40px;
+    transition: .5s;
+    position: relative;
+    text-align: center;
+    top: 0%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background: #262626;
+    line-height: 40px;
+    font-size: 24px;
+    transition: .5s;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container2 .box2 .content .btn1:before,
+.container2 .box2 .content .btn2:before,
+.container2 .box2 .content .btn3:before,
+.container2 .box2 .content .btn4:before,
+.container2 .box2 .content .btn5:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-style: solid;
+
+    border-width: 80px 100px;
+    z-index: -1;
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+    transform-origin: left;
+}
+
+.container2 .box2 .content .btn1:hover:before,
+.container2 .box2 .content .btn2:hover:before,
+.container2 .box2 .content .btn3:hover:before,
+.container2 .box2 .content .btn4:hover:before,
+.container2 .box2 .content .btn5:hover:before {
+    transform: rotate(58deg);
+}
+
+.container2 .box2 .content .btn1:before {
+    border-color: #ff0058;
+}
+
+.container2 .box2 .content .btn1:hover:before {
+    border-color: #ffbc00;
+}
+
+.container2 .box2 .content .btn2:before {
+    border-color: #03a9f4;
+}
+
+.container2 .box2 .content .btn2:hover:before {
+    border-color: #8554A3;
+}
+
+.container2 .box2 .content .btn3:before {
+    border-color: #4dff03;
+}
+
+.container2 .box2 .content .btn3:hover:before {
+    border-color: #0ED9CF;
+}
+
+.container2 .box2 .content .btn4:before {
+    border-color: brown;
+}
+
+.container2 .box2 .content .btn4:hover:before {
+    border-color: #CA7E28;
+}
+
+.container2 .box2 .content .btn5:before {
+    border-color: purple;
+}
+
+.container2 .box2 .content .btn5:hover:before {
+    border-color: violet;
+}

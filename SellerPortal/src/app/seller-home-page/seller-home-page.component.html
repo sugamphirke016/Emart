@@ -1,0 +1,37 @@
+<body>
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" autocomplete="off">
+    <label class="custom-field1 one1">
+        <input type="text" required [(ngModel)]="product_name" name="name">
+        <span class="placeholder1">Product Name</span>
+    </label>
+
+    <label class="custom-field1 one1">
+        <input type="text" required [(ngModel)]="product_price" name="price">
+        <span class="placeholder1">Price</span>
+    </label>
+
+    <label class="custom-field1 one1">
+        <input type="text" required [(ngModel)]="product_color" name="color">
+        <span class="placeholder1">Color</span>
+    </label>
+
+    <label class="custom-field1 one1">
+        <input type="text" required [(ngModel)]="product_category" name="category">
+        <span class="placeholder1">Category</span>
+    </label>
+
+    <label class="custom-field1 one1">
+        <input type="text" class="textarea" required [(ngModel)]="product_desc" name="description">
+        <span class="placeholder1">Product Description</span>
+    </label>
+
+    <label class="custom-field1 one1">
+        <input type="text" required [(ngModel)]="product_url" name="image">
+        <span class="placeholder1">Image URL</span>
+    </label>
+
+    <!-- <a href="" style="--clr:#6eff3e" (click)="addProduct()"><span>Add Product</span><i></i></a>
+     -->
+     <button type="submit">Add Product</button>
+    </form>
+</body>

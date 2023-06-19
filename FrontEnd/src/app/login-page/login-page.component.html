@@ -1,0 +1,77 @@
+<div class="login">
+  <a routerLink="/home"><img class="back"  [src]="lockIconSrc" (mouseenter)="onLockIconHover(true)" (mouseleave)="onLockIconHover(false)" alt="Back"></a>
+<div class="container">
+  <img style="border-radius: 10px;" id="logo" src="assets/Photos/e-Mart_animated_logo.gif" alt="e-Mart" height="130px"
+    width="130px">
+
+  <span id="logotext">e-Mart</span>
+</div>
+<div class="slogan">
+  <img src="assets/Photos/Logo_mart.png" alt="" height="70px" width="250px"
+    style="margin-left: 47%; margin-top:-30px">
+</div>
+<div id="screen">
+  <div id="frame1" style="border-right: 1px solid black ;">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="assets/Photos/image1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Photos/image2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Photos/image3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Photos/image4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Photos/image5.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/Photos/image6.jpg" style="width:100%">
+      </div>
+
+    </div>
+  </div>
+  <div id="frame2">
+    <p class="SignupText" style="font-weight: bolder; font-size: 30px;">HELLO THERE,</p>
+    <p class="SignupText" style="margin-top:-30px; font-weight: bolder; font-size: 30px;">WELCOME BACK</p>
+    <p class="SignupText" style="margin-top:-25px; color:#00008B">Sign In to continue!</p>
+
+    <form name="loginForm" class="userinfo" >
+
+      <label class="custom-field three">
+        <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" name="username" title="Incorrect username" placeholder="Enter Username" required/>
+        <!-- <span class="placeholder">Enter Username</span> -->
+        <span class="border"></span>
+      </label>
+
+      <br>    
+      <label class="custom-field three">
+        <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" name="passw" id="pass" placeholder="Enter Password" [type]="passwordVisible ? 'text' : 'password'" required />
+        <!-- <span class="placeholder">Enter Password</span> -->
+        <span class="border"></span>
+      </label>
+
+      <img class="lock" (click)="togglePasswordVisibility()"  [src]="passwordVisible ? 'assets/Photos/unlocked.png' : 'assets/Photos/locked.png'" height="40px" width="40px" alt="">
+
+      <br>
+      <input name="submit" type="submit" (click)="login()" value="Sign In">
+      <br>
+      <div class="prompts">
+
+      </div>
+      <span class="prompt">NEW USER? </span>
+      <a routerLink="/register" class="promptAsk">SIGN UP</a>
+    </form>
+
+  </div>
+</div>
+</div>

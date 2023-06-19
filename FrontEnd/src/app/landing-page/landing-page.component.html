@@ -1,0 +1,1210 @@
+<!-- <app-preloader></app-preloader> -->
+<app-header></app-header>
+<app-top-nav-bar></app-top-nav-bar>
+<div class="main_activity">
+
+    <div class="carousels">
+        <app-carousel1 [autoSlide]="true"></app-carousel1>
+    </div>
+
+    <div style="height: 2px; background: #fff; margin-top: 60px;"></div>
+
+    <div class="hotdeals">
+
+        <div class="title text">
+            <p>EXCLUSIVE HOTDEALS!</p><br>
+            <svg>
+                <filter id="fire">
+                    <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="18" seed="3">
+                        <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.2"
+                            repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="8"></feDisplacementMap>
+                    >
+                </filter>
+            </svg>
+        </div>
+
+
+        <div class="circle-card">
+            <div class="circle" style="--clr:#f40103;">
+                <img src="assets/Photos/boat_logo.png" alt="" class="logo">
+            </div>
+            <div class="content">
+                <h2>Xtend Smartwatch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque ipsum fugiat molestiae
+                    commodi!
+                    Iusto eveniet quis rem, vero explicabo provident ullam!</p>
+                <a href="">Explore the Deal</a>
+            </div>
+            <img src="assets/Photos/watch.png" alt="" class="product_img">
+        </div>
+        <div class="circle-card">
+            <div class="circle" style="--clr:#f40103;">
+                <img src="assets/Photos/jbl_logo.png" alt="" class="logo">
+            </div>
+            <div class="content">
+                <h2>JBL Tune 760NC</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque ipsum fugiat molestiae
+                    commodi!
+                    Iusto eveniet quis rem, vero explicabo provident ullam!</p>
+                <a href="">Explore the Deal</a>
+            </div>
+            <img src="assets/Photos/jbl_product.png" alt="" class="product_img">
+        </div>
+        <div class="circle-card">
+            <div class="circle" style="--clr:#f40103;">
+                <img src="assets/Photos/jordan_logo.png" alt="" class="logo">
+            </div>
+            <div class="content">
+                <h2>Nike Jordan 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque ipsum fugiat molestiae
+                    commodi!
+                    Iusto eveniet quis rem, vero explicabo provident ullam!</p>
+                <a href="">Explore the Deal</a>
+            </div>
+            <img src="assets/Photos/jordan_product.png" alt="" class="jordan">
+        </div>
+        <div class="circle-card">
+            <div class="circle" style="--clr:#f40103;">
+                <img src="assets/Photos/cocacola_logo.png" alt="" class="logo">
+            </div>
+            <div class="content">
+                <h2>COCA COLA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque ipsum fugiat molestiae
+                    commodi!
+                    Iusto eveniet quis rem, vero explicabo provident ullam!</p>
+                <a href="">Explore the Deal</a>
+            </div>
+            <img src="assets/Photos/cocacola.png" alt="" class="product_img coke">
+        </div>
+
+    </div>
+
+    <div style="height: 2px; background: #fff;"></div>
+
+    <div class="thirdWind">
+        <p class="tagforStaticProducts"><span>e-Mart</span> Specials</p>
+        <div class="artistry">
+            <div class="leftLine"></div>
+            <div class="start"><img src="../../assets/Photos/star.png" alt="star"></div>
+            <div class="rightLine"></div>
+        </div>
+
+        <div class="row first-row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-9%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard1($event)">
+                                <img src="../../assets/Photos/Products/product1.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard1($event)">
+                                <img src="../../assets/Photos/Products/product1.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard1($event)">
+                                <img src="../../assets/Photos/Products/product1.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url1 || '../../assets/Photos/Products/product1.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Apple MacBook Air Laptop with M2 chip</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹1,36,409/-</span> <span class="old-price">₹1,49,900/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-11%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard2($event)">
+                                <img src="../../assets/Photos/Products/product2.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard2($event)">
+                                <img src="../../assets/Photos/Products/product2.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard2($event)">
+                                <img src="../../assets/Photos/Products/product2.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url2 || '../../assets/Photos/Products/product2.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">LG DualUp Monitor with Ergo Stand</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹48,060/-</span> <span class="old-price">₹54,000/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-5%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard3($event)">
+                                <img src="../../assets/Photos/Products/product3.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard3($event)">
+                                <img src="../../assets/Photos/Products/product3.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard3($event)">
+                                <img src="../../assets/Photos/Products/product3.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url3 || '../../assets/Photos/Products/product3.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Lenovo Yoga AIO 7 All-in-One Desktop</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹1,63,390/-</span> <span class="old-price">₹1,71,990/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-20%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard4($event)">
+                                <img src="../../assets/Photos/Products/product4.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard4($event)">
+                                <img src="../../assets/Photos/Products/product4.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard4($event)">
+                                <img src="../../assets/Photos/Products/product4.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url4 || '../../assets/Photos/Products/product4.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Logitech G213 Prodigy Gaming Keyboard</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p><span class="money">₹3,995/-</span> <span class="old-price">₹4,995/-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row second-row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-56%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard5($event)">
+                                <img src="../../assets/Photos/Products/product9.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard5($event)">
+                                <img src="../../assets/Photos/Products/product9.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard5($event)">
+                                <img src="../../assets/Photos/Products/product9.3.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard5($event)">
+                                <img src="../../assets/Photos/Products/product9.4.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url5 || '../../assets/Photos/Products/product9.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">boAt Xtend Smart Watch</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹3,519/-</span> <span class="old-price">₹7,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-0%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard6($event)">
+                                <img src="../../assets/Photos/Products/product6.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard6($event)">
+                                <img src="../../assets/Photos/Products/product6.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard6($event)">
+                                <img src="../../assets/Photos/Products/product6.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url6 || '../../assets/Photos/Products/product6.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Panasonic Desk Lamp Holder</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹2,995/-</span> <span class="old-price">₹2,995/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-6%</div>
+                        <div class="label label-green">Only 1 Left</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard7($event)">
+                                <img src="../../assets/Photos/Products/product7.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard7($event)">
+                                <img src="../../assets/Photos/Products/product7.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard7($event)">
+                                <img src="../../assets/Photos/Products/product7.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url7 || '../../assets/Photos/Products/product7.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Microsoft Surface Book 2</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹2,17,046/-</span> <span class="old-price">₹2,30,900/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-4%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard8($event)">
+                                <img src="../../assets/Photos/Products/product8.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard8($event)">
+                                <img src="../../assets/Photos/Products/product8.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard8($event)">
+                                <img src="../../assets/Photos/Products/product8.3.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard8($event)">
+                                <img src="../../assets/Photos/Products/product8.4.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url8 || '../../assets/Photos/Products/product8.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Saregama Carvaan:Portable Music Player</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p><span class="money">₹7,090/-</span> <span class="old-price">₹7,390/-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden" style="display: none;">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-69%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard10($event)">
+                                <img src="../../assets/Photos/Products/product10.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard10($event)">
+                                <img src="../../assets/Photos/Products/product10.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard10($event)">
+                                <img src="../../assets/Photos/Products/product10.3.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard10($event)">
+                                <img src="../../assets/Photos/Products/product10.4.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url10 || '../../assets/Photos/Products/product10.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Samsung Galaxy Buds Live Bluetooth</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p><span class="money">₹4,999/-</span> <span class="old-price">₹15,990/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-25%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard11($event)">
+                                <img src="../../assets/Photos/Products/product11.1.png" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard11($event)">
+                                <img src="../../assets/Photos/Products/product11.2.png" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard11($event)">
+                                <img src="../../assets/Photos/Products/product11.3.png" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url11 || '../../assets/Photos/Products/product11.1.png'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">RiteBite 100% Natural Vegan Protein Powder</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹824/-</span> <span class="old-price">₹1,099/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-28%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard12($event)">
+                                <img src="../../assets/Photos/Products/product12.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard12($event)">
+                                <img src="../../assets/Photos/Products/product12.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard12($event)">
+                                <img src="../../assets/Photos/Products/product12.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url12 || '../../assets/Photos/Products/product12.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Kadence Premium SemiAcoustic Guitar</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p><span class="money">₹11,999/-</span> <span class="old-price">₹16,799/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-45%</div>
+                        <div class="label label-green">Deal of Day</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard13($event)">
+                                <img src="../../assets/Photos/Products/product13.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard13($event)">
+                                <img src="../../assets/Photos/Products/product13.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard13($event)">
+                                <img src="../../assets/Photos/Products/product13.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url13 || '../../assets/Photos/Products/product13.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Vault RG1 Soloist Electric Guitar</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹10,499/-</span> <span class="old-price">₹18,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden" style="display: none;">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-16%</div>
+                        <div class="label label-green">Combo of 3</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard14($event)">
+                                <img src="../../assets/Photos/Products/product14.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard14($event)">
+                                <img src="../../assets/Photos/Products/product14.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard14($event)">
+                                <img src="../../assets/Photos/Products/product14.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url14 || '../../assets/Photos/Products/product14.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">WildStone Code Chrome, Iridium & Titanium</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹695/-</span> <span class="old-price">₹825/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-25%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard15($event)">
+                                <img src="../../assets/Photos/Products/product15.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard15($event)">
+                                <img src="../../assets/Photos/Products/product15.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard15($event)">
+                                <img src="../../assets/Photos/Products/product15.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url15 || '../../assets/Photos/Products/product15.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Redmi K50i 5G</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹26,999/-</span> <span class="old-price">₹35,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-5%</div>
+                        <div class="label label-green">Flagship</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard16($event)">
+                                <img src="../../assets/Photos/Products/product16.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard16($event)">
+                                <img src="../../assets/Photos/Products/product16.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard16($event)">
+                                <img src="../../assets/Photos/Products/product16.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url16 || '../../assets/Photos/Products/product16.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Apple iPhone 14 Pro(Deep Purple)</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p><span class="money">₹1,23,099/-</span> <span class="old-price">₹1,29,900/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-16%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard17($event)">
+                                <img src="../../assets/Photos/Products/product17.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard17($event)">
+                                <img src="../../assets/Photos/Products/product17.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard17($event)">
+                                <img src="../../assets/Photos/Products/product17.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url17 || '../../assets/Photos/Products/product17.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">OnePlus 10 Pro 5G</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹55,999/-</span> <span class="old-price">₹66,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden" style="display: none;">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-78%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard21($event)">
+                                <img src="../../assets/Photos/Products/product21.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard21($event)">
+                                <img src="../../assets/Photos/Products/product21.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard21($event)">
+                                <img src="../../assets/Photos/Products/product21.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url21 || '../../assets/Photos/Products/product21.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Boult Audio ProBass Ranger</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹1,798/-</span> <span class="old-price">₹7,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-17%</div>
+                        <div class="label label-green">Newly Arrival</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard18($event)">
+                                <img src="../../assets/Photos/Products/product18.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard18($event)">
+                                <img src="../../assets/Photos/Products/product18.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard18($event)">
+                                <img src="../../assets/Photos/Products/product18.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url18 || '../../assets/Photos/Products/product18.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Samsung Galaxy S23 5G(Lavender)</a>
+                        <div class="rating20">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹79,999/-</span> <span class="old-price">₹95,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-36%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard19($event)">
+                                <img src="../../assets/Photos/Products/product19.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard19($event)">
+                                <img src="../../assets/Photos/Products/product19.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard19($event)">
+                                <img src="../../assets/Photos/Products/product19.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url19 || '../../assets/Photos/Products/product19.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">QNT Prime Whey, 100% Whey Protein</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹2,450 /-</span> <span class="old-price">₹3,799/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-53%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard20($event)">
+                                <img src="../../assets/Photos/Products/product20.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard20($event)">
+                                <img src="../../assets/Photos/Products/product20.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard20($event)">
+                                <img src="../../assets/Photos/Products/product20.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url20 || '../../assets/Photos/Products/product20.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Boat XSmartWatch Gen 5.0</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹1,899/-</span> <span class="old-price">₹3,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden" style="display: none;">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-0%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard22($event)">
+                                <img src="../../assets/Photos/Products/product22.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard22($event)">
+                                <img src="../../assets/Photos/Products/product22.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard22($event)">
+                                <img src="../../assets/Photos/Products/product22.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url22 || '../../assets/Photos/Products/product22.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Boat XSmartWatch Gen 5.0</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹300/-</span> <span class="old-price">₹300/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-55%</div>
+                        <div class="label label-green">Newly Arrival</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard23($event)">
+                                <img src="../../assets/Photos/Products/product23.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard23($event)">
+                                <img src="../../assets/Photos/Products/product23.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard23($event)">
+                                <img src="../../assets/Photos/Products/product23.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url23 || '../../assets/Photos/Products/product23.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">AGARO COSMIC PLUS Electric Tooth Brush</a>
+                        <div class="rating20">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹1,648 /-</span> <span class="old-price">₹3,699/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-15%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard24($event)">
+                                <img src="../../assets/Photos/Products/product24.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard24($event)">
+                                <img src="../../assets/Photos/Products/product24.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard24($event)">
+                                <img src="../../assets/Photos/Products/product24.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url24 || '../../assets/Photos/Products/product24.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">Philips Hair Dryer BHD318/00</a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">₹2,091/-</span> <span class="old-price">₹2,495/-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">-49%</div>
+                        <div class="label label-green">Pre-Order</div>
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImageCard25($event)">
+                                <img src="../../assets/Photos/Products/product25.1.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard25($event)">
+                                <img src="../../assets/Photos/Products/product25.2.jpg" alt="Product1">
+                            </div>
+                            <div class="p" (mouseover)="changeImageCard25($event)">
+                                <img src="../../assets/Photos/Products/product25.3.jpg" alt="Product1">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{url25 || '../../assets/Photos/Products/product25.1.jpg'}}" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="">SmartGRID Stylux Ergo High-Back Chair </a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p><span class="money">₹16,999/-</span> <span class="old-price">₹35,999/-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn_load-more" id="btn_load-more" (click)="showMoreProducts()">
+            Load More &nbsp;&#8681;
+        </a>
+
+    </div>
+
+    <h1 class="tagforDynamicProducts">Products from all over &nbsp;<span> INDIA</span></h1>
+    <div class="row">
+        <div class="col-sm-3" *ngFor="let item of trendyProducts">
+            <div class="product-item">
+                <img src="{{item.image}}" alt="ProductImg">
+                <!-- </div> -->
+                <div class="product-details">
+                    <h6 class="name-head">{{item.name}}</h6>
+                    <div class="product-price">
+                        <h6>Price: ₹ {{item.price}}</h6>
+                    </div>
+                    <!-- <div class="product-color">
+                        <h6>Color: {{item.color}}</h6>
+                    </div> -->
+                </div>
+                <div class="product-footer">
+                    <a (click)="storeScrollPosition()" routerLink="/details/{{item.id}}">View Details</a>
+                    <a>Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+
+    <h2 class="categories">Browse our Categories!</h2>
+    <app-news-letter></app-news-letter>
+    
+    <div class="letter">
+            <h1 class="char_8">C</h1>
+            <h1 class="char_7">U</h1>
+            <h1 class="char_6">S</h1>
+            <h1 class="char_5">T</h1>
+            <h1 class="char_4">O</h1>
+            <h1 class="char_3">M</h1>
+            <h1 class="char_2">E</h1>
+            <h1 class="char_1">R</h1>
+            <h1></h1>
+            <h1 class="char1">T</h1>
+            <h1 class="char2">E</h1>
+            <h1 class="char3">S</h1>
+            <h1 class="char4">T</h1>
+            <h1 class="char5">I</h1>
+            <h1 class="char6">M</h1>
+            <h1 class="char7">O</h1>
+            <h1 class="char8">N</h1>
+            <h1 class="char9">I</h1>
+            <h1 class="char10">A</h1>
+            <h1 class="char11">L</h1>
+    </div>
+    <app-testimonial></app-testimonial>
+
+</div>
+<!-- <app-product-card></app-product-card> -->
+
+<app-bottom-nav-bar></app-bottom-nav-bar>
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

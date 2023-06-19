@@ -1,0 +1,20 @@
+.error-no{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    flex-basis: 100%;
+    margin-top: 150px;
+}
+
+.error-desc {
+    color: rosybrown;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 100%;
+    margin-top: 20px;
+}

@@ -1,0 +1,58 @@
+div{
+    overflow: hidden;
+    background-color: #454545;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 15px;
+    width: 100%;
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    display: inline;
+    font-size: 20px;
+    font-family: 'Bungee', cursive;
+}
+form{
+    display: inline;
+}
+
+form>input{
+    background-color: #555555;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 40px;
+    width: 25%;
+    padding-left: 20px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+form>button{
+    background-image: url("../../assets/Photos/send.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 35px;
+        width: 40px;
+        border: none;
+        margin-left: -60px;
+        cursor: pointer;
+        background-color: #555555;
+        border-radius: 20px;
+        vertical-align: middle;
+}
+
+form>button:hover{
+    background-image: url('../../assets/Photos/send_active.png');
+}
+
+img{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}

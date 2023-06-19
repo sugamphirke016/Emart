@@ -1,0 +1,17 @@
+@import url('loginstyle.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Concert+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Bungee&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #A9A9A9; */
+    /* zoom: 90%; */
+    overflow: hidden;
+}

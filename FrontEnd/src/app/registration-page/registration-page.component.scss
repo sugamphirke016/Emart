@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Bungee&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
+
+#logo {
+  margin-left: 33.33%;
+  margin-top: 20px;
+  border: 4px solid black;
+}
+
+#logotext {
+  font-family: 'Ubuntu', sans-serif;
+  color: darkblue;
+  font-size: 90px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#screen {
+  display: flex;
+  margin-top: -10px;
+}
+
+#screen #frame1 {
+  display: inline-block;
+  margin-left: 18.5%;
+  margin-top: 100px;
+}
+
+#screen #frame2 {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  max-height: 460px;
+  max-width: 500px;
+  padding-left: 30px;
+  padding-top: -20px;
+}
+
+#frame2 form {
+  display: block;
+}
+
+#frame2 .SignupText {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Bungee', cursive; */
+  color: #F89A26;
+}
+
+form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: -25px;
+}
+
+form,
+form::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// -----------------------------------------------------------------------------------------------------------
+
+.custom-field {
+  position: relative;
+  font-size: 14px;
+  // padding-top: 20px;
+  margin-bottom: -10px;
+  cursor: text;
+}
+
+.custom-field input {
+  outline: none;
+  appearance: none;
+  border: none;
+  background: #00008B;
+  padding: 12px;
+  border-radius: 6px;
+  width: 250px;
+  font-size: 14px;
+  color: #F89A26;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: white;
+  transition: color 0.6s ease;
+}
+
+.custom-field.three .border {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  transform: none;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+
+}
+
+.custom-field.three .border::after,
+.custom-field.three .border::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-radius: 3px;
+
+}
+
+.custom-field.three .border::before {
+  left: 0;
+  bottom: 0;
+  border-bottom: 0px solid #F89A26;
+  border-right: 0px solid #F89A26;
+  transition: width 0.3s ease,
+    height 0.3s ease
+}
+
+.custom-field.three .border::after {
+  right: 0;
+  top: 0;
+  border-left: 0px solid #F89A26;
+  border-top: 0px solid #F89A26;
+  transition: width 0.3s ease,
+    height 0.3s ease
+}
+
+.custom-field.three input:valid~.border:before,
+.custom-field.three input:focus~.border:before,
+.custom-field.three input:valid~.border:after,
+.custom-field.three input:focus~.border:after {
+  width: 100%;
+  height: 100%;
+  border-width: 3px;
+}
+
+.custom-field.three input:valid~.border:before,
+.custom-field.three input:focus~.border:before {
+  transition: width 0.3s ease,
+    height 0.3s ease 0.3s
+}
+
+.custom-field.three input:valid~.border:after,
+.custom-field.three input:focus~.border:after {
+  transition: width 0.3s ease 0.6s,
+    height 0.3s ease 0.9s
+}
+
+// -----------------------------------------------------------------------------------------------------------
+
+.userinfo input[type="submit"] {
+  background-color: #F89A26;
+  color: white;
+  margin-left: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: large;
+  border: none;
+  width: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 10, 0.232);
+  transition: all 0.4s;
+  margin-top: 20px;
+}
+
+.userinfo input[type="submit"]:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.496);
+}
+
+.prompts {
+  display: inline-block;
+}
+
+.prompt {
+  font-family: 'Antic', sans-serif;
+  margin-left: -8px;
+
+}
+
+.promptAsk {
+  font-family: 'Antic', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 17px;
+  color: #00008B;
+}
+
+.promptAsk:hover {
+  text-decoration: underline;
+}
+
+.lock:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,68 @@
+<app-header></app-header>
+<app-top-nav-bar></app-top-nav-bar>
+<div class="body">
+    <div class="container" style="padding-top: 10px;">
+        <div class="status" [style.display]="displayMSG">
+            <span class="removed" [style.display]="displayREM_MSG">One product removed from cart</span>
+            <span class="wishlist" [style.display]="displayWISH_MSG">One product added to wishlist</span>
+            <button class="closeDIV">&#x2716;</button>
+        </div>
+    </div>
+    <div class="cart-page">
+        <div class="row1">
+            <div class="details">
+                <h2>Shopping Trolley</h2>
+                <ul class="item" *ngFor="let cart of cartData; let i = index">
+                    <div class="row">
+                        <div class="col-1-of-2 column_img">
+                            <li>
+                                <img src="{{cart.image}}" alt="">
+                            </li>
+                        </div>
+                        <div class="col-1-of-2 column_dets">
+                            <li>
+                                <span class="pname">{{cart.name}}</span>
+                            </li>
+                            <li>
+                                <span class="pprice">₹ {{cart.price}}</span>
+                            </li>
+                            <li style="margin-top: 20px;">
+                                <label for="quantity">Quantity:</label>
+                                <select name="quantity" id="quantity" [disabled]="!showDropdown || i !== selectedIndex"
+                                    [(ngModel)]="cart.quantity" (change)="onQuantityChange($event)">
+                                    <option *ngFor="let option of quantityOptions" [value]="option">
+                                        {{ option }}
+                                    </option>
+                                </select>
+                                <a class="btn_changeQuant" (click)="toggleDropdown(i)"
+                                    [innerText]="updateMode && i === selectedIndex ? 'Update' : 'Change?'"></a>
+                            </li>
+                            <div class="buttons">
+                                <a class="btn_saveForLater" (click)="addToWishlist(i)">Save For Later</a>
+                                <a class="btn_remove" (click)="removeProduct(i)">Remove</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="summary">
+                <h3>Pricing</h3>
+                <ul>
+                    <li><span>Amount : </span><span>₹ {{priceSummary.price}}</span></li>
+                    <li><span>Tax : </span><span>₹ {{priceSummary.tax}}</span></li>
+                    <li><span>Delivery : </span><span>₹ {{priceSummary.delivery}}</span></li>
+                    <li><span>Discount : </span><span>₹ {{priceSummary.discount}}</span></li>
+                    <li><span>Total : </span><span>
+                            <h4>₹ {{priceSummary.total}}/-</h4>
+                        </span></li>
+                </ul>
+                <input class="coupnCOD" type="text" placeholder="Enter Coupon Code">
+                <button class="btn_cpnApply">Apply</button>
+                <button class="btn_checkout" routerLink="/order">Checkout&nbsp; &#8688;</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-bottom-nav-bar></app-bottom-nav-bar>
+<app-footer></app-footer>
