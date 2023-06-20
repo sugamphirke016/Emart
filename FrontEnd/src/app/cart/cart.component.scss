@@ -58,7 +58,7 @@
   max-width: 400px;
   padding: 20px 30px;
   border-radius: 6px;
-  max-height: 400px;
+  max-height: 410px;
 }
 
 .summary h3 {
@@ -267,7 +267,7 @@ select {
   outline: none;
   font-size: 16px;
   padding: 12px 16px;
-  width: 70%;
+  width: 65%;
   background-color: #f8f8f8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
@@ -302,20 +302,15 @@ select {
   background-color: #2196F3;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .btn_cpnApply:hover {
-  background-color: #1976D2;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.btn_cpnApply:focus {
   outline: none;
   background-color: #1565C0;
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn_cpnApply:active {
@@ -323,3 +318,12 @@ select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.success-message {
+  color: #4CAF50;
+  margin-left: 10px;
+}
+
+.error-message {
+  color: #F44336;
+  margin-left: 10px;
+}

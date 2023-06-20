@@ -57,8 +57,13 @@
                             <h4>₹ {{priceSummary.total}}/-</h4>
                         </span></li>
                 </ul>
-                <input class="coupnCOD" type="text" placeholder="Enter Coupon Code">
-                <button class="btn_cpnApply">Apply</button>
+                <input class="coupnCOD" [(ngModel)]="couponCode" type="text" placeholder="Enter Coupon Code">
+                <button class="btn_cpnApply" (click)="showRemoveButton ? removeCoupon() : applyCoupon()" [style.backgroundColor]="showRemoveButton ? 'red' : ''">{{ showRemoveButton ? 'Remove' : 'Apply' }}</button>
+                <div *ngIf="showMessage">
+                    <span class="success-message" *ngIf="validCoupon">Coupon applied successfully!</span>
+                    <span class="error-message" *ngIf="invalidCoupon">Invalid coupon code</span>
+                </div>
+
                 <button class="btn_checkout" routerLink="/order">Checkout&nbsp; &#8688;</button>
             </div>
         </div>
