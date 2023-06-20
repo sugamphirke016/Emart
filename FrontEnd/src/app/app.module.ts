@@ -28,6 +28,8 @@ import { CartComponent } from './cart/cart.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { OrderplacedComponent } from './orderplaced/orderplaced.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     CartComponent,
     OrderplacedComponent,
     TestimonialComponent,
+    CheckoutComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,

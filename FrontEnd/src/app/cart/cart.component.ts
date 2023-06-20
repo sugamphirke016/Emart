@@ -217,5 +217,4 @@ export class CartComponent implements OnInit {
     this.showRemoveButton = false;
   }
 
-
 }

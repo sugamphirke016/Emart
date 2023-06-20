@@ -296,19 +296,6 @@
       "id": 1
     },
     {
-      "name": "Speedex Stainless-Steel WaterBottle",
-      "price": "352",
-      "color": "#0C2B41 #000000 yellow pink purple",
-      "category": "Kids",
-      "description": "Brand: Speedex; Material: Stainless Steel; Colour: Dark Blue; Capacity: 1000 Milliliters; Special Feature: Leak Proof, Lightweight",
-      "image": "https://sugamphirke.com/Projects/emart/img/Speedex%20Stainless%20Steel%201L%20Water%20bottle.jpg",
-      "gallery": "https://sugamphirke.com/Projects/emart/img/13.1.jpg https://sugamphirke.com/Projects/emart/img/13.2.jpg https://sugamphirke.com/Projects/emart/img/13.3.jpg https://sugamphirke.com/Projects/emart/img/13.4.jpg https://sugamphirke.com/Projects/emart/img/13.5.jpg https://sugamphirke.com/Projects/emart/img/13.6.jpg",
-      "quantity": "2",
-      "userId": 2,
-      "productId": 13,
-      "id": 10
-    },
-    {
       "name": "Lava Blaze",
       "price": "11999",
       "color": "#CAE2CA #8b6fae #b94175 #5d265d",
@@ -329,7 +316,7 @@
       "description": "Brand: PHILIPS;Item Dimensions LxWxH: 23 x 13.4 x 12.4 Centimeters; Item Weight: 775 Grams; Style: STH3000/2",
       "image": "https://sugamphirke.com/Projects/emart/img/Philips%20Garment%20Steamer.jpg",
       "gallery": "https://sugamphirke.com/Projects/emart/img/22.1.jpg https://sugamphirke.com/Projects/emart/img/22.2.jpg https://sugamphirke.com/Projects/emart/img/22.3.jpg https://sugamphirke.com/Projects/emart/img/22.4.jpg https://sugamphirke.com/Projects/emart/img/22.5.jpg https://sugamphirke.com/Projects/emart/img/22.6.jpg",
-      "quantity": "4",
+      "quantity": "1",
       "userId": 2,
       "productId": 22,
       "id": 12

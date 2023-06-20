@@ -7,6 +7,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProductPopUpComponent } from './product-pop-up/product-pop-up.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderplacedComponent } from './orderplaced/orderplaced.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 const routes: Routes = [
   {
@@ -38,6 +40,14 @@ const routes: Routes = [
   {
     path: 'home',
     component: LandingPageComponent
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
+  },
+  {
+    path: 'profile',
+    component: ProfilePageComponent
   },
   {
     path: '**',
