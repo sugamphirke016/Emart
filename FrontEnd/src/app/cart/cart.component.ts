@@ -16,6 +16,7 @@ export class CartComponent implements OnInit {
     this.invalidCoupon = false;
     this.showMessage = false;
     this.showRemoveButton = false;
+    this.emptyCoupon = false;
   }
 
   myData: string = '';
@@ -44,9 +45,7 @@ export class CartComponent implements OnInit {
       result.forEach((item) => {
         if (item.quantity) {
           price += +item.price * item.quantity;
-          console.log(item.quantity);
         } else {
-          console.log('Quantity is missing:', item.quantity);
           price += +item.price;
         }
       });
@@ -124,12 +123,16 @@ export class CartComponent implements OnInit {
   invalidCoupon: boolean;
   showMessage: boolean;
   showRemoveButton: boolean;
+  emptyCoupon: boolean;
 
   applyCoupon() {
+    if (this.couponCode === '') {
+      this.emptyCoupon = true;
+    }
     this.http.get<any[]>('http://localhost:3000/coupons')
       .subscribe((coupons: any[]) => {
         const coupon = coupons.find(c => c.code === this.couponCode);
-        if (coupon && coupon.code==="TESTING") {
+        if (coupon && coupon.code === "TESTING") {
           this.validCoupon = true;
           this.invalidCoupon = false;
 
@@ -139,40 +142,36 @@ export class CartComponent implements OnInit {
             result.forEach((item) => {
               if (item.quantity) {
                 price += +item.price * item.quantity;
-                console.log(item.quantity);
               } else {
-                console.log('Quantity is missing:', item.quantity);
                 price += +item.price;
               }
             });
             this.priceSummary.price = price;
             const taxRate = 0.13;
             this.priceSummary.tax = parseFloat((price * taxRate).toFixed(2));
-            this.priceSummary.delivery = 125;            
+            this.priceSummary.delivery = 125;
             let totalMoney = price + 125;
             this.priceSummary.discount = parseFloat(((price * .08) + (totalMoney - 1)).toFixed(2));
             totalMoney = 1;
             this.priceSummary.total = totalMoney;
           });
           this.showRemoveButton = true;
-        } 
-        else if(coupon){
+        }
+        else if (coupon) {
           this.product.currentCart().subscribe((result) => {
             this.cartData = result;
             let price = 0;
             result.forEach((item) => {
               if (item.quantity) {
                 price += +item.price * item.quantity;
-                console.log(item.quantity);
               } else {
-                console.log('Quantity is missing:', item.quantity);
                 price += +item.price;
               }
             });
             this.priceSummary.price = price;
             const taxRate = 0.13;
             this.priceSummary.tax = parseFloat((price * taxRate).toFixed(2));
-            this.priceSummary.delivery = 125;            
+            this.priceSummary.delivery = 125;
             let totalMoney = price + 125;
             this.priceSummary.discount = parseFloat(((price * .08) + (totalMoney * coupon.percent * 0.01)).toFixed(2));
             totalMoney = parseFloat((totalMoney - (totalMoney * coupon.percent / 100)).toFixed(2));
@@ -183,8 +182,10 @@ export class CartComponent implements OnInit {
           this.showRemoveButton = true;
         }
         else {
-          this.validCoupon = false;
-          this.invalidCoupon = true;
+          if (this.couponCode !== "") {
+            this.validCoupon = false;
+            this.invalidCoupon = true;
+          }
         }
         this.showMessage = true;
       });
@@ -197,9 +198,7 @@ export class CartComponent implements OnInit {
       result.forEach((item) => {
         if (item.quantity) {
           price += +item.price * item.quantity;
-          console.log(item.quantity);
         } else {
-          console.log('Quantity is missing:', item.quantity);
           price += +item.price;
         }
       });

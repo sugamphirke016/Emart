@@ -1,6 +1,6 @@
 .footer {
     background-color: #454545;
-    height: 350px;
+    height: 380px;
     width: 100%;
 }
 
@@ -133,6 +133,19 @@
 .desc span{
     text-align: left;
     display: block;
+}
+
+.desc .author {
+    text-decoration: none;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: bisque;
+    transition: color .5s ease;
+}
+
+.desc .author:hover {
+    color: #ff4da6;
 }
 
 textarea {

@@ -62,6 +62,7 @@
                 <div *ngIf="showMessage">
                     <span class="success-message" *ngIf="validCoupon">Coupon applied successfully!</span>
                     <span class="error-message" *ngIf="invalidCoupon">Invalid coupon code</span>
+                    <span class="empty-message" *ngIf="emptyCoupon">Please enter a coupon code</span>
                 </div>
 
                 <button class="btn_checkout" routerLink="/order">Checkout&nbsp; &#8688;</button>
