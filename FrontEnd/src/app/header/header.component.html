@@ -6,7 +6,7 @@
     </div>
     
     <div id="btns">
-        <abbr title="Account"><a routerLink="/login"><img class="btn_header_account btn_header" [src]="accountIconSrc" alt="Account" width="40px" height="40px" (mouseenter)="onAccountIconHover(true)" (mouseleave)="onAccountIconHover(false)" /></a></abbr>
+        <abbr title="Account"><a [routerLink]="accountRouterLink"><img class="btn_header_account btn_header" [src]="accountIconSrc" alt="Account" width="40px" height="40px" (mouseenter)="onAccountIconHover(true)" (mouseleave)="onAccountIconHover(false)" /></a></abbr>
 
         <router-outlet></router-outlet>
 

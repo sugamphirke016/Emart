@@ -30,6 +30,16 @@ import { OrderplacedComponent } from './orderplaced/orderplaced.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { PersonalInformationComponent } from './navigation-items/personal-information/personal-information.component';
+import { ValidateAccountComponent } from './navigation-items/validate-account/validate-account.component';
+import { LoginCredentialsComponent } from './navigation-items/login-credentials/login-credentials.component';
+import { AddressesComponent } from './navigation-items/addresses/addresses.component';
+import { YourCouponsComponent } from './navigation-items/your-coupons/your-coupons.component';
+import { PaymentMethodsComponent } from './navigation-items/payment-methods/payment-methods.component';
+import { OrderHistoryComponent } from './navigation-items/order-history/order-history.component';
+import { WishlistComponent } from './navigation-items/wishlist/wishlist.component';
+import { ToHelpComponent } from './navigation-items/to-help/to-help.component';
+import { LogoutComponent } from './navigation-items/logout/logout.component';
 
 
 @NgModule({
@@ -55,6 +65,16 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     TestimonialComponent,
     CheckoutComponent,
     ProfilePageComponent,
+    PersonalInformationComponent,
+    ValidateAccountComponent,
+    LoginCredentialsComponent,
+    AddressesComponent,
+    YourCouponsComponent,
+    PaymentMethodsComponent,
+    OrderHistoryComponent,
+    WishlistComponent,
+    ToHelpComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,8 +10,30 @@ import { ProductService } from '../services/product.service';
 
 
 export class HeaderComponent implements OnInit{
+
+  ngOnInit(): void{
+    let cartData = localStorage.getItem('localCart');
+    if(cartData){
+      this.cartItems = JSON.parse(cartData).length;
+    }
+    else{
+      this.product.currentCart().subscribe((result)=>{
+        this.cartItems = result.length;
+      });
+    }
+
+    const user = localStorage.getItem('user');
+    if (user) {
+      this.accountRouterLink = '/profile';
+    } else {
+      this.accountRouterLink = '/login';
+    }
+  }
+
   constructor(private router: Router, private product: ProductService) {}
+  
   cartItems = 0
+  accountRouterLink: string = '';
   accountIconSrc: string = "assets/Photos/account_idle.png";
   cartIconSrc: string = "assets/Photos/cart_idle.png";
   settingsIconSrc: string = "assets/Photos/settings_idle.png";
@@ -28,17 +50,7 @@ export class HeaderComponent implements OnInit{
     this.settingsIconSrc = isHovering ? "assets/Photos/settings_filled.png" : "assets/Photos/settings_idle.png";
   }
 
-  ngOnInit(): void{
-    let cartData = localStorage.getItem('localCart');
-    if(cartData){
-      this.cartItems = JSON.parse(cartData).length;
-    }
-    else{
-      this.product.currentCart().subscribe((result)=>{
-        this.cartItems = result.length;
-      });
-    }
-  }
+  
 }
 
 

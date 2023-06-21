@@ -1,1 +1,26 @@
-<p>profile-page works!</p>
+<div class="row">
+    <div class="col-1-of-2 container-1">
+        <div class="profile-container">
+            <div class="userAvatar">
+                <img [src]="avatarImageUrl" class="avatar" alt="Avatar" />
+            </div>
+            <div class="user-details">
+                <div class="full-name">{{ fullName }}</div>
+                <div class="username">{{ username }}</div>
+            </div>
+        </div>
+        <div class="navigation-bar">
+            <ul>
+              <li *ngFor="let item of navigationItems" (click)="selectItem(item)">
+                {{ item.title }}
+              </li>
+            </ul>
+          </div>
+    </div>
+
+    <div class=" col-1-of-2 container-2">
+        <div *ngIf="selectedItem">
+            <ng-container *ngComponentOutlet="selectedItem.component"></ng-container>
+          </div>
+    </div>
+</div>  
