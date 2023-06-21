@@ -1,1 +1,73 @@
-<p>personal-information works!</p>
+<div class="personal-information">
+    <h1 class="title">Personal Information</h1>
+    <form [formGroup]="personalInfoForm" (ngSubmit)="savePersonalInfo()">
+        <div class="form-field">
+            <label for="fullName">Full Name</label>
+            <br>
+            <input class="fullNameInput" type="text" id="fullName" formControlName="fullName" [readonly]="!fieldEditMode['fullName']"
+                [class.editable]="fieldEditMode['fullName']" (click)="handleFieldClick($event, 'fullName')"/>
+            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('fullName')">
+                <i [class]="fieldEditMode['fullName'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+            </button>
+        </div>
+        
+        <div class="form-field">
+            <label for="username">Username</label>
+            <br>
+            <input class="UsernameInput" type="text" id="username" formControlName="username"
+                [readonly]="!fieldEditMode['username']" [class.editable]="fieldEditMode['username']"
+                (click)="handleFieldClick($event, 'username')" />
+            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('username')">
+                <i [class]="fieldEditMode['username'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+            </button>
+        </div>
+        
+        <div class="form-field">
+            <label for="phoneNo">Phone Number</label>
+            <br>
+            <input class="phoneNoInput" type="tel" id="phoneNo" formControlName="phoneNo"
+                [readonly]="!fieldEditMode['phoneNo']" [class.editable]="fieldEditMode['phoneNo']"
+                (click)="handleFieldClick($event, 'phoneNo')" />
+            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('phoneNo')">
+                <i [class]="fieldEditMode['phoneNo'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+            </button>
+        </div>
+        
+        <div class="form-field">
+            <label for="email">Email</label>
+            <br>
+            <input class="EmailInput" type="email" id="email" formControlName="email"
+                [readonly]="!fieldEditMode['email']" [class.editable]="fieldEditMode['email']"
+                (click)="handleFieldClick($event, 'email')" />
+            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('email')">
+                <i [class]="fieldEditMode['email'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+            </button>
+        </div>
+        
+        <div class="form-field">
+            <label for="password">Password</label>
+            <br>
+            <input class="PasswordInput" type="password" id="password" formControlName="password"
+                [readonly]="!fieldEditMode['password']" [class.editable]="fieldEditMode['password']"
+                (click)="handleFieldClick($event, 'password')" />
+            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('password')">
+                <i [class]="fieldEditMode['password'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+            </button>
+        </div>
+        
+        <div class="form-field">
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" formControlName="gender"
+                    [readonly]="!fieldEditMode['gender']" [class.editable]="fieldEditMode['gender']"
+                    (focus)="fieldEditMode['gender'] = true" />
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" formControlName="gender"
+                    [readonly]="!fieldEditMode['gender']" [class.editable]="fieldEditMode['gender']"
+                    (focus)="fieldEditMode['gender'] = true" />
+                <label for="female">Female</label>
+            </div>
+        </div>
+    </form>
+</div>

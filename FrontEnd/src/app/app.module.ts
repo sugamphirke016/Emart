@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +33,6 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { PersonalInformationComponent } from './navigation-items/personal-information/personal-information.component';
 import { ValidateAccountComponent } from './navigation-items/validate-account/validate-account.component';
-import { LoginCredentialsComponent } from './navigation-items/login-credentials/login-credentials.component';
 import { AddressesComponent } from './navigation-items/addresses/addresses.component';
 import { YourCouponsComponent } from './navigation-items/your-coupons/your-coupons.component';
 import { PaymentMethodsComponent } from './navigation-items/payment-methods/payment-methods.component';
@@ -67,7 +67,6 @@ import { LogoutComponent } from './navigation-items/logout/logout.component';
     ProfilePageComponent,
     PersonalInformationComponent,
     ValidateAccountComponent,
-    LoginCredentialsComponent,
     AddressesComponent,
     YourCouponsComponent,
     PaymentMethodsComponent,
@@ -83,7 +82,8 @@ import { LogoutComponent } from './navigation-items/logout/logout.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FontAwesomeModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

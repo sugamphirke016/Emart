@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.personal-information {
+    padding-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.title {
+    padding: 50px 0 20px 0;
+}
+
+form {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+button {
+    border-radius: 50%;
+}
+
+.fullNameInput,
+.UsernameInput,
+.phoneNoInput,
+.EmailInput,
+.PasswordInput {
+    width: 300px;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+    color: #999999;
+    cursor: not-allowed;
+    border: .5px solid #333;
+}
+
+.actions {
+    text-align: right;
+    margin-top: 20px;
+
+    .edit-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: #888;
+        margin-right: 10px;
+
+        &:hover {
+            color: #333;
+        }
+    }
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.editable {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: initial;
+}
+
+
