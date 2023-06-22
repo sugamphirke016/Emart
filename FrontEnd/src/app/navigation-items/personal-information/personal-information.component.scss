@@ -26,6 +26,15 @@ form {
 
 button {
     border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #000;
+
+}
+
+i {
+    color: white;
+    font-weight: 300;
 }
 
 .fullNameInput,
@@ -85,3 +94,213 @@ button {
 }
 
 
+.edit-icon {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 12px);
+    transform: translateY(-50%);
+    background-color: #666;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #666;
+}
+
+.edit-icon:hover .tooltip {
+    opacity: 1;
+}
+
+.updateGender {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.updateGender:hover {
+    background-color: #0056b3;
+}
+
+.updateGender:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.gender-selection {
+    display: flex;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gender-option input[type="radio"] {
+    display: none;
+}
+
+.gender-option i {
+    font-size: 24px;
+    margin-right: 5px;
+    color: #ccc;
+}
+
+.gender-option:hover i,
+.gender-option input[type="radio"]:checked+i {
+    color: #007bff;
+}
+
+$grid-width: 1140px;
+$gutter-vertical: 80px;
+$gutter-horizontal: 60px;
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal})/2);
+    }
+}
+
+
+.avatar-selection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.avatar-option {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar-option img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.avatar-overlay i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.avatar-option:hover {
+    transform: scale(1.1);
+}
+
+.avatar-option.selected .avatar-overlay {
+    display: flex;
+}
+
+.avatar-selection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar-option {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar-option img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.avatar-overlay i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.avatar-option:hover {
+    transform: scale(1.1);
+}
+
+.avatar-option.selected .avatar-overlay {
+    display: flex;
+}

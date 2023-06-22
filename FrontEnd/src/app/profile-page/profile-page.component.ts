@@ -24,7 +24,7 @@ export class ProfilePageComponent {
 
   fullName: string = '';
   username: string = '';
-  avatarImageUrl: string = 'https://sugamphirke.com/Projects/emart/img/men1.png';
+  avatarImageUrl: string = 'https://sugamphirke.com/Projects/emart/img/default_user.jpg';
   navigationItems = [
     { title: 'Personal Information', component: PersonalInformationComponent },
     // { title: 'Validate Account', component: ValidateAccountComponent },

@@ -67,6 +67,62 @@ export class PersonalInformationComponent implements OnInit {
     }
   }
 
-  
+  selectedAvatar: number | null=  null;
+
+  selectAvatar(avatarNumber: number) {
+    this.selectedAvatar = avatarNumber;
+  }
+
+  selectedGender: string = '';
+
+  saveGender() {
+    const maleInput = document.getElementById('male-input') as HTMLInputElement;
+    const femaleInput = document.getElementById('female-input') as HTMLInputElement;
+
+    if (maleInput.checked) {
+      this.selectedGender = 'male';
+      this.hideFemaleAvatars();
+    } else if (femaleInput.checked) {
+      this.selectedGender = 'female';
+      this.hideMaleAvatars();
+    }
+    console.log(this.selectedGender);
+  }
+
+  hideFemaleAvatars() {
+    const avatar1 = document.getElementById('avatar1');
+    const avatar2 = document.getElementById('avatar2');
+    const avatar3 = document.getElementById('avatar3');
+    const avatar4 = document.getElementById('avatar4');
+    const avatar5 = document.getElementById('avatar5');
+    const avatar6 = document.getElementById('avatar6');
+
+    if (avatar1) avatar1.style.display = 'inline-block';
+    if (avatar2) avatar2.style.display = 'inline-block';
+    if (avatar3) avatar3.style.display = 'inline-block';
+    if (avatar4) avatar4.style.display = 'none';
+    if (avatar5) avatar5.style.display = 'none';
+    if (avatar6) avatar6.style.display = 'none';
+
+    this.selectedAvatar = 1;
+  }
+
+  hideMaleAvatars() {
+    const avatar1 = document.getElementById('avatar1');
+    const avatar2 = document.getElementById('avatar2');
+    const avatar3 = document.getElementById('avatar3');
+    const avatar4 = document.getElementById('avatar4');
+    const avatar5 = document.getElementById('avatar5');
+    const avatar6 = document.getElementById('avatar6');
+
+    if (avatar1) avatar1.style.display = 'none';
+    if (avatar2) avatar2.style.display = 'none';
+    if (avatar3) avatar3.style.display = 'none';
+    if (avatar4) avatar4.style.display = 'inline-block';
+    if (avatar5) avatar5.style.display = 'inline-block';
+    if (avatar6) avatar6.style.display = 'inline-block';
+
+    this.selectedAvatar = 4;
+  }
   
 }

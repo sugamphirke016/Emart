@@ -52,13 +52,12 @@ body {
     min-width: calc((100% - 410px));
     padding: 0;
     color: #000;
-    
-    // overflow: hidden;
 }
 
 .avatar {
     height: 120px;
     margin: 20px 0 20px 20px;
+    border-radius: 50%;
 }
 
 .userAvatar {

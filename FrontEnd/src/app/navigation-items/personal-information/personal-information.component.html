@@ -1,73 +1,138 @@
 <div class="personal-information">
     <h1 class="title">Personal Information</h1>
-    <form [formGroup]="personalInfoForm" (ngSubmit)="savePersonalInfo()">
-        <div class="form-field">
-            <label for="fullName">Full Name</label>
-            <br>
-            <input class="fullNameInput" type="text" id="fullName" formControlName="fullName" [readonly]="!fieldEditMode['fullName']"
-                [class.editable]="fieldEditMode['fullName']" (click)="handleFieldClick($event, 'fullName')"/>
-            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('fullName')">
-                <i [class]="fieldEditMode['fullName'] ? 'fas fa-check' : 'fas fa-edit'"></i>
-            </button>
-        </div>
-        
-        <div class="form-field">
-            <label for="username">Username</label>
-            <br>
-            <input class="UsernameInput" type="text" id="username" formControlName="username"
-                [readonly]="!fieldEditMode['username']" [class.editable]="fieldEditMode['username']"
-                (click)="handleFieldClick($event, 'username')" />
-            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('username')">
-                <i [class]="fieldEditMode['username'] ? 'fas fa-check' : 'fas fa-edit'"></i>
-            </button>
-        </div>
-        
-        <div class="form-field">
-            <label for="phoneNo">Phone Number</label>
-            <br>
-            <input class="phoneNoInput" type="tel" id="phoneNo" formControlName="phoneNo"
-                [readonly]="!fieldEditMode['phoneNo']" [class.editable]="fieldEditMode['phoneNo']"
-                (click)="handleFieldClick($event, 'phoneNo')" />
-            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('phoneNo')">
-                <i [class]="fieldEditMode['phoneNo'] ? 'fas fa-check' : 'fas fa-edit'"></i>
-            </button>
-        </div>
-        
-        <div class="form-field">
-            <label for="email">Email</label>
-            <br>
-            <input class="EmailInput" type="email" id="email" formControlName="email"
-                [readonly]="!fieldEditMode['email']" [class.editable]="fieldEditMode['email']"
-                (click)="handleFieldClick($event, 'email')" />
-            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('email')">
-                <i [class]="fieldEditMode['email'] ? 'fas fa-check' : 'fas fa-edit'"></i>
-            </button>
-        </div>
-        
-        <div class="form-field">
-            <label for="password">Password</label>
-            <br>
-            <input class="PasswordInput" type="password" id="password" formControlName="password"
-                [readonly]="!fieldEditMode['password']" [class.editable]="fieldEditMode['password']"
-                (click)="handleFieldClick($event, 'password')" />
-            <button type="button" class="edit-icon" (click)="toggleFieldEditMode('password')">
-                <i [class]="fieldEditMode['password'] ? 'fas fa-check' : 'fas fa-edit'"></i>
-            </button>
-        </div>
-        
-        <div class="form-field">
-            <label>Gender</label>
-            <div class="radio-group">
-                <input type="radio" id="male" name="gender" value="male" formControlName="gender"
-                    [readonly]="!fieldEditMode['gender']" [class.editable]="fieldEditMode['gender']"
-                    (focus)="fieldEditMode['gender'] = true" />
-                <label for="male">Male</label>
+    <div class="row">
+        <div class="col-1-of-2">
+            <form [formGroup]="personalInfoForm" (ngSubmit)="savePersonalInfo()">
+                <div class="form-field">
+                    <label for="fullName">Full Name</label>
+                    <br>
+                    <input class="fullNameInput" type="text" id="fullName" formControlName="fullName"
+                        [readonly]="!fieldEditMode['fullName']" [class.editable]="fieldEditMode['fullName']"
+                        (click)="handleFieldClick($event, 'fullName')" />
+                    <button type="button" class="edit-icon" (click)="toggleFieldEditMode('fullName')">
+                        <i [class]="fieldEditMode['fullName'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+                        <span class="tooltip" [class.show]="fieldEditMode['fullName']">{{ fieldEditMode['fullName'] ?
+                            'Update' : 'Edit Full Name' }}</span>
+                    </button>
 
-                <input type="radio" id="female" name="gender" value="female" formControlName="gender"
-                    [readonly]="!fieldEditMode['gender']" [class.editable]="fieldEditMode['gender']"
-                    (focus)="fieldEditMode['gender'] = true" />
-                <label for="female">Female</label>
+                </div>
+
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <br>
+                    <input class="UsernameInput" type="text" id="username" formControlName="username"
+                        [readonly]="!fieldEditMode['username']" [class.editable]="fieldEditMode['username']"
+                        (click)="handleFieldClick($event, 'username')" />
+                    <button type="button" class="edit-icon" (click)="toggleFieldEditMode('username')">
+                        <i [class]="fieldEditMode['username'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+                        <span class="tooltip" [class.show]="fieldEditMode['username']">{{ fieldEditMode['username'] ?
+                            'Update' : 'Edit Username' }}</span>
+                    </button>
+                </div>
+
+                <div class="form-field">
+                    <label for="phoneNo">Phone Number</label>
+                    <br>
+                    <input class="phoneNoInput" type="tel" id="phoneNo" formControlName="phoneNo"
+                        [readonly]="!fieldEditMode['phoneNo']" [class.editable]="fieldEditMode['phoneNo']"
+                        (click)="handleFieldClick($event, 'phoneNo')" />
+                    <button type="button" class="edit-icon" (click)="toggleFieldEditMode('phoneNo')">
+                        <i [class]="fieldEditMode['phoneNo'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+                        <span class="tooltip" [class.show]="fieldEditMode['phoneNo']">{{ fieldEditMode['phoneNo'] ?
+                            'Update' : 'Edit Phone Number' }}</span>
+                    </button>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <br>
+                    <input class="EmailInput" type="email" id="email" formControlName="email"
+                        [readonly]="!fieldEditMode['email']" [class.editable]="fieldEditMode['email']"
+                        (click)="handleFieldClick($event, 'email')" />
+                    <button type="button" class="edit-icon" (click)="toggleFieldEditMode('email')">
+                        <i [class]="fieldEditMode['email'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+                        <span class="tooltip" [class.show]="fieldEditMode['email']">{{ fieldEditMode['email'] ? 'Update'
+                            : 'Edit Email' }}</span>
+                    </button>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <br>
+                    <input class="PasswordInput" type="password" id="password" formControlName="password"
+                        [readonly]="!fieldEditMode['password']" [class.editable]="fieldEditMode['password']"
+                        (click)="handleFieldClick($event, 'password')" />
+                    <button type="button" class="edit-icon" (click)="toggleFieldEditMode('password')">
+                        <i [class]="fieldEditMode['password'] ? 'fas fa-check' : 'fas fa-edit'"></i>
+                        <span class="tooltip" [class.show]="fieldEditMode['password']">{{ fieldEditMode['password'] ?
+                            'Update' : 'Edit Password' }}</span>
+                    </button>
+                </div>
+
+                <div class="form-field">
+                    <label>Gender</label>
+                    <div class="gender-selection">
+                        <label for="male-input" class="gender-option">
+                            <input type="radio" name="gender" id="male-input" value="male" />
+                            <i class="fas fa-male"></i> Male
+                        </label>
+                        <label for="female-input" class="gender-option">
+                            <input type="radio" name="gender" id="female-input" value="female" />
+                            <i class="fas fa-female"></i> Female
+                        </label>
+                        <a class="updateGender" (click)="saveGender()">Save Gender</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-1-of-2">
+            Choose Your avatar:
+
+            <div class="avatar-selection">
+                <div class="avatar-option" id="avatar1" (click)="selectAvatar(1)" [ngClass]="{ 'selected': selectedAvatar === 1 }">
+                    <img src="https://sugamphirke.com/Projects/emart/img/men1.png" alt="Avatar 1" />
+                    <div class="avatar-overlay">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="avatar-option" id="avatar2" (click)="selectAvatar(2)" [ngClass]="{ 'selected': selectedAvatar === 2 }">
+                    <img src="https://sugamphirke.com/Projects/emart/img/men2.png" alt="Avatar 2" />
+                    <div class="avatar-overlay">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="avatar-option" id="avatar3" (click)="selectAvatar(3)" [ngClass]="{ 'selected': selectedAvatar === 3 }">
+                    <img src="https://sugamphirke.com/Projects/emart/img/men3.png" alt="Avatar 3" />
+                    <div class="avatar-overlay">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="avatar-option" id="avatar4" (click)="selectAvatar(4)" [ngClass]="{ 'selected': selectedAvatar === 4 }">
+                    <img src="https://sugamphirke.com/Projects/emart/img/lady1.png" alt="Avatar 4" />
+                    <div class="avatar-overlay">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="avatar-option" id="avatar5" (click)="selectAvatar(5)" [ngClass]="{ 'selected': selectedAvatar === 5 }">
+                    <img src="https://sugamphirke.com/Projects/emart/img/lady2.png" alt="Avatar 5" />
+                    <div class="avatar-overlay">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="avatar-option" id="avatar6" (click)="selectAvatar(6)" [ngClass]="{ 'selected': selectedAvatar === 6 }">
+                    <img src="https://sugamphirke.com/Projects/emart/img/lady3.png" alt="Avatar 6" />
+                    <div class="avatar-overlay">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </form>
-</div>
+    </div>

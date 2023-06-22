@@ -296,19 +296,6 @@
       "id": 1
     },
     {
-      "name": "Lava Blaze",
-      "price": "11999",
-      "color": "#CAE2CA #8b6fae #b94175 #5d265d",
-      "category": "Electronics",
-      "description": "Brand: Lava; Model Name: Lava Blaze 5G; Network Service Provider: Unlocked for All Carriers; Operating System: Android 12.0; Cellular Technology: 5G",
-      "image": "https://sugamphirke.com/Projects/emart/img/Lava%20Blaze.jpg",
-      "gallery": "https://sugamphirke.com/Projects/emart/img/20.1.jpg https://sugamphirke.com/Projects/emart/img/20.2.jpg https://sugamphirke.com/Projects/emart/img/20.3.jpg https://sugamphirke.com/Projects/emart/img/20.4.jpg https://sugamphirke.com/Projects/emart/img/20.5.jpg",
-      "quantity": 1,
-      "userId": 2,
-      "productId": 20,
-      "id": 11
-    },
-    {
       "name": "Philips Garment Steamer",
       "price": "3349",
       "color": "#8394A4 #4bb6a0 #487180 #1f600c",
@@ -320,6 +307,19 @@
       "userId": 2,
       "productId": 22,
       "id": 12
+    },
+    {
+      "name": "RealMe Narzo N55",
+      "price": "12999",
+      "color": "Blue #222B31 #F0DC9A",
+      "category": "Electronics",
+      "description": "Brand: realme; Model Name: realme narzo N55; Network Service Provider: Unlocked for All Carriers; Operating System: Android 13.0; Cellular Technology: 4G",
+      "image": "https://sugamphirke.com/Projects/emart/img/RealMe%20Narzo%20N55.jpg",
+      "gallery": "https://sugamphirke.com/Projects/emart/img/11.1.jpg https://sugamphirke.com/Projects/emart/img/11.2.jpg https://sugamphirke.com/Projects/emart/img/11.3.jpg https://sugamphirke.com/Projects/emart/img/11.4.jpg https://sugamphirke.com/Projects/emart/img/11.5.jpg https://sugamphirke.com/Projects/emart/img/11.6.jpg",
+      "quantity": "10",
+      "userId": 2,
+      "productId": 11,
+      "id": 13
     }
   ],
   "users": [
