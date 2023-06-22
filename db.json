@@ -329,6 +329,7 @@
       "email": "anil@test.com",
       "phoneNo": "7248965324",
       "password": "Sugam@016",
+      "avatar": "https://sugamphirke.com/Projects/emart/img/default_user.jpg",
       "id": 1
     },
     {
@@ -337,7 +338,17 @@
       "email": "sugamphirke9@gmail.com",
       "phoneNo": "7248965324",
       "password": "Sugam@016",
+      "avatar": "https://sugamphirke.com/Projects/emart/img/default_user.jpg",
       "id": 2
+    },
+    {
+      "name": "Apeksha Mulimani",
+      "username": "Apeksha",
+      "email": "sugamphirke9@gmail.com",
+      "phoneNo": "7248965324",
+      "password": "Sugam@016",
+      "avatar": "https://sugamphirke.com/Projects/emart/img/default_user.jpg",
+      "id": 3
     }
   ],
   "coupons": [

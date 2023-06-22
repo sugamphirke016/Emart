@@ -27,7 +27,6 @@ export class ProfilePageComponent {
   avatarImageUrl: string = 'https://sugamphirke.com/Projects/emart/img/default_user.jpg';
   navigationItems = [
     { title: 'Personal Information', component: PersonalInformationComponent },
-    // { title: 'Validate Account', component: ValidateAccountComponent },
     { title: 'Shipping and Billing Addresses', component: AddressesComponent },
     { title: 'Your Coupons', component: YourCouponsComponent },
     { title: 'Preferences', component: PaymentMethodsComponent },

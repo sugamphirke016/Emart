@@ -104,7 +104,6 @@ export class PersonalInformationComponent implements OnInit {
     if (avatar5) avatar5.style.display = 'none';
     if (avatar6) avatar6.style.display = 'none';
 
-    this.selectedAvatar = 1;
   }
 
   hideMaleAvatars() {
@@ -122,7 +121,6 @@ export class PersonalInformationComponent implements OnInit {
     if (avatar5) avatar5.style.display = 'inline-block';
     if (avatar6) avatar6.style.display = 'inline-block';
 
-    this.selectedAvatar = 4;
   }
   
 }

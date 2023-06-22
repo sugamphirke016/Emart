@@ -38,7 +38,8 @@ export class RegistrationPageComponent {
       "username": this.username,
       "email": this.email,
       "phoneNo": this.phoneNo,
-      "password": this.password
+      "password": this.password,
+      "avatar": "https://sugamphirke.com/Projects/emart/img/default_user.jpg"
     };
     this.http.post("http://localhost:8000/user/create", bodyData).subscribe((resultData: any) => {
       console.log(resultData);
